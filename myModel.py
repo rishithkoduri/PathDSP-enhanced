@@ -35,3 +35,46 @@ if __name__ == "__main__":
     net = FNN(756) #Feedforward_bn(100)
     print('initiating an feed forward network....')
     print('    construct=\n    {:}'.format(net))
+
+class LateFusionFNN(tch.nn.Module):
+    def __init__(self, n_drug_features, n_cell_features):
+        super(LateFusionFNN, self).__init__()
+        
+        # Branch A: Drug Features (e.g. 1024-bit Morgan Fingerprint)
+        self.drug_branch = tch.nn.Sequential(
+            tch.nn.Linear(n_drug_features, 512),
+            tch.nn.ELU(),
+            tch.nn.Dropout(p=0.1),
+            tch.nn.Linear(512, 256),
+            tch.nn.ELU(),
+            tch.nn.Dropout(p=0.1)
+        )
+        
+        # Branch B: Cell Line Multi-omics (e.g. Gene Expression, Mutations, CNA)
+        self.cell_branch = tch.nn.Sequential(
+            tch.nn.Linear(n_cell_features, 1024),
+            tch.nn.ELU(),
+            tch.nn.Dropout(p=0.1),
+            tch.nn.Linear(1024, 512),
+            tch.nn.ELU(),
+            tch.nn.Dropout(p=0.1)
+        )
+        
+        # Fusion Layer: Combining latent representations
+        self.fusion = tch.nn.Sequential(
+            tch.nn.Linear(256 + 512, 512),
+            tch.nn.ELU(),
+            tch.nn.Dropout(p=0.1),
+            tch.nn.Linear(512, 100),
+            tch.nn.ELU(),
+            tch.nn.Dropout(p=0.1),
+            tch.nn.Linear(100, 1)
+        )
+
+    def forward(self, x_drug, x_cell):
+        out_drug = self.drug_branch(x_drug)
+        out_cell = self.cell_branch(x_cell)
+        
+        # Concatenate along feature dimension
+        out_fused = tch.cat((out_drug, out_cell), dim=1)
+        return self.fusion(out_fused)

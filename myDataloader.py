@@ -25,3 +25,28 @@ class NumpyDataset(tchud.Dataset):
     
     def __len__(self):
         return len(self.X)
+
+import h5py
+
+class H5Dataset(tchud.Dataset):
+    def __init__(self, h5_path):
+        self.h5_path = h5_path
+        # Open a read-only handle to the h5 file
+        self.file = h5py.File(self.h5_path, 'r')
+        self.length = self.file['labels'].shape[0]
+
+    def __getitem__(self, index):
+        # Lazy read from disk - only loads the specific row into RAM
+        x_drug = self.file['drug_features'][index]
+        x_cell = self.file['cell_features'][index]
+        y = self.file['labels'][index]
+        
+        return (tch.from_numpy(x_drug).float(), 
+                tch.from_numpy(x_cell).float(), 
+                tch.tensor([y]).float())
+    
+    def __len__(self):
+        return self.length
+    
+    def close(self):
+        self.file.close()
