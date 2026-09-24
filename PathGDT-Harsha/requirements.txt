@@ -1,0 +1,12 @@
+# PathGDT dependencies.
+# NOTE: install PyTorch SEPARATELY first (CUDA build for the RTX 4060) — see README / commands.
+# No torch_geometric and no Triton are needed (the GNN is pure PyTorch).
+streamlit>=1.30
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.10
+matplotlib>=3.7
+rdkit>=2023.9        # molecular graphs (GNN) + Morgan fingerprints + SMILES parsing
+tokenizers>=0.15     # BPE SMILES tokenizer
+shap>=0.44           # pathway attribution (falls back to gradient x input if unavailable)

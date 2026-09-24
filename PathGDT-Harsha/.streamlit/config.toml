@@ -1,0 +1,6 @@
+[runner]
+# Don't auto-render bare expressions (e.g. matplotlib fig.tight_layout() -> "None" chips).
+magicEnabled = false
+
+[server]
+maxUploadSize = 1000
