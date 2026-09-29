@@ -1,0 +1,7 @@
+# Install torch separately first (see instructions), then:
+numpy<2
+pandas
+scipy
+scikit-learn
+shap
+matplotlib
