@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch checkpoints and large raw archives
+checkpoints/*.pt
+checkpoints/*.pth
+data/raw/*.zip
+*.tar.gz
+data/raw/input.txt
+data/
+# Environments and IDEs
+.env
+.venv
+env/
+venv/
+.idea/
+.vscode/
+.pytest_cache/
+
+# Experiment logs and temp files
+*.log
+scratch/

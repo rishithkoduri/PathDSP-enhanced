@@ -1,0 +1,72 @@
+{
+  "definition": "Delta = Error(FNN) - Error(PIU). Positive delta indicates PIU has lower prediction error.",
+  "n_observations": 734,
+  "n_drugs": 17,
+  "n_cells": 47,
+  "observation_paired_bootstrap": {
+    "analysis_type": "observation_level_bootstrap",
+    "resampling_unit": "observation_pair",
+    "n_boot": 1000,
+    "n_samples": 734,
+    "observed_delta_mae": 0.07854367951866503,
+    "bootstrap_mean_delta_mae": 0.07881425745090871,
+    "delta_mae_ci_lower": 0.046552475749632165,
+    "delta_mae_ci_upper": 0.1115188877349865,
+    "observed_delta_rmse": 0.11807311697111733,
+    "bootstrap_mean_delta_rmse": 0.11829187339699017,
+    "delta_rmse_ci_lower": 0.08974747284190121,
+    "delta_rmse_ci_upper": 0.14641629813389587,
+    "delta_mae_mean": 0.07881425745090871,
+    "delta_rmse_mean": 0.11829187339699017
+  },
+  "drug_clustered_bootstrap": {
+    "analysis_type": "clustered_bootstrap",
+    "resampling_unit": "drug",
+    "n_clusters": 17,
+    "n_observations": 734,
+    "n_boot": 1000,
+    "observed_delta_mae": 0.07854367951866503,
+    "bootstrap_mean_delta_mae": 0.0785224929962157,
+    "delta_mae_ci_lower": 0.014759841781374908,
+    "delta_mae_ci_upper": 0.14189272990396126,
+    "observed_delta_rmse": 0.11807311697111733,
+    "bootstrap_mean_delta_rmse": 0.11624370752630124,
+    "delta_rmse_ci_lower": 0.05382979528578959,
+    "delta_rmse_ci_upper": 0.1674818094114554
+  },
+  "cell_clustered_bootstrap": {
+    "analysis_type": "clustered_bootstrap",
+    "resampling_unit": "cell",
+    "n_clusters": 47,
+    "n_observations": 734,
+    "n_boot": 1000,
+    "observed_delta_mae": 0.07854367951866503,
+    "bootstrap_mean_delta_mae": 0.07840586291831617,
+    "delta_mae_ci_lower": 0.0455682823748144,
+    "delta_mae_ci_upper": 0.10800695341732948,
+    "observed_delta_rmse": 0.11807311697111733,
+    "bootstrap_mean_delta_rmse": 0.1184819811513457,
+    "delta_rmse_ci_lower": 0.0902084746938767,
+    "delta_rmse_ci_upper": 0.1431226411835425
+  },
+  "two_way_clustered_bootstrap": {
+    "analysis_type": "two_way_clustered_bootstrap",
+    "resampling_method": "two_way_pigeonhole_bootstrap",
+    "resampling_units": [
+      "drug",
+      "cell"
+    ],
+    "n_unique_drugs": 17,
+    "n_unique_cells": 47,
+    "n_observations": 734,
+    "n_boot_valid": 1000,
+    "observed_delta_mae": 0.07854367951866503,
+    "bootstrap_mean_delta_mae": 0.0789309469385703,
+    "delta_mae_ci_lower": 0.007305975425631309,
+    "delta_mae_ci_upper": 0.14915347404235832,
+    "observed_delta_rmse": 0.11807311697111733,
+    "bootstrap_mean_delta_rmse": 0.11778073143343366,
+    "delta_rmse_ci_lower": 0.04569633702747693,
+    "delta_rmse_ci_upper": 0.17714976652227904
+  }
+}

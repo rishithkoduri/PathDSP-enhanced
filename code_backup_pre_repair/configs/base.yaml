@@ -1,0 +1,54 @@
+seed: 42
+device: 'auto'  # 'auto', 'cuda', or 'cpu'
+
+data:
+  raw_file: 'data/raw/input.txt'
+  processed_dir: 'data/processed'
+  splits_dir: 'data/splits'
+  manifests_dir: 'data/manifests'
+  cache_file: 'data/processed/pathdsp_dataset.npz'
+  metadata_file: 'data/processed/dataset_metadata.json'
+  pathway_metadata_file: 'data/processed/pathway_metadata.json'
+  target_col: 'resp'
+  drug_col: 'drug'
+  cell_col: 'cell'
+
+training:
+  optimizer: 'AdamW'
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 128
+  max_epochs: 80
+  early_stopping_patience: 12
+  min_delta: 0.0005
+  loss_fn: 'MSE'  # 'MSE' or 'RMSE'
+  scheduler: 'ReduceLROnPlateau'
+  scheduler_patience: 5
+  scheduler_factor: 0.5
+  mixed_precision: false
+  num_workers: 0
+
+uncertainty:
+  ensemble_size: 3
+  ensemble_seeds: [42, 1042, 2042]
+  conformal_levels: [0.90, 0.95]
+
+evaluation:
+  random_split:
+    train_ratio: 0.80
+    val_ratio: 0.10
+    test_ratio: 0.10
+  lodo:
+    n_drugs_eval: 10
+  loco:
+    n_cells_eval: 10
+  double_cold_start:
+    drug_test_ratio: 0.15
+    cell_test_ratio: 0.15
+    val_ratio: 0.10
+
+smoke_test:
+  n_samples: 1000
+  epochs: 3
+  batch_size: 64
+  ensemble_size: 2

@@ -1,0 +1,584 @@
+{
+  "LODO": {
+    "FNN": {
+      "mean_mae": 1.2427795683199656,
+      "std_mae": 0.8518596747833808,
+      "mean_rmse": 1.3844285408008952,
+      "std_rmse": 0.8311249063061343,
+      "per_drug": [
+        {
+          "mae": 0.5807117193960658,
+          "rmse": 0.7817035388808554,
+          "r2": -0.07975345588839367,
+          "pearson": 0.5947457439315016,
+          "spearman": 0.5719720382090259,
+          "n_samples": 319,
+          "drug": "PD0325901"
+        },
+        {
+          "mae": 3.093563196066837,
+          "rmse": 3.13851504083709,
+          "r2": -13.206608809693675,
+          "pearson": 0.7780334420409908,
+          "spearman": 0.7829482610752941,
+          "n_samples": 319,
+          "drug": "Camptothecin"
+        },
+        {
+          "mae": 0.5315556249481702,
+          "rmse": 0.6476648692625215,
+          "r2": 0.27728886719670687,
+          "pearson": 0.6980806320099588,
+          "spearman": 0.6631235004484545,
+          "n_samples": 318,
+          "drug": "5-Fluorouracil"
+        },
+        {
+          "mae": 0.4126092246762893,
+          "rmse": 0.536388943755423,
+          "r2": 0.49089767578151466,
+          "pearson": 0.7902695674891052,
+          "spearman": 0.7745372299267901,
+          "n_samples": 318,
+          "drug": "Oxaliplatin"
+        },
+        {
+          "mae": 1.320761869520933,
+          "rmse": 1.4619153182892475,
+          "r2": -2.3633660381882367,
+          "pearson": 0.5084250996970368,
+          "spearman": 0.5499555090671384,
+          "n_samples": 318,
+          "drug": "Luminespib"
+        },
+        {
+          "mae": 0.9494207044126196,
+          "rmse": 1.146819787429407,
+          "r2": -2.7076964397466257,
+          "pearson": 0.5733265908466996,
+          "spearman": 0.5725564178427206,
+          "n_samples": 318,
+          "drug": "Linsitinib"
+        },
+        {
+          "mae": 2.251182576992883,
+          "rmse": 2.4661920439928844,
+          "r2": -28.060715343984434,
+          "pearson": 0.4135841637954474,
+          "spearman": 0.376953043733962,
+          "n_samples": 318,
+          "drug": "LGK974"
+        },
+        {
+          "mae": 1.9172510938021887,
+          "rmse": 1.9726017962630635,
+          "r2": -4.333835195377699,
+          "pearson": 0.8433226426417775,
+          "spearman": 0.8585511125158807,
+          "n_samples": 318,
+          "drug": "Irinotecan"
+        },
+        {
+          "mae": 0.7645927439443767,
+          "rmse": 1.000653415331471,
+          "r2": -0.6513067033412236,
+          "pearson": 0.2045830287939287,
+          "spearman": 0.19418589615971138,
+          "n_samples": 318,
+          "drug": "SCH772984"
+        },
+        {
+          "mae": 0.6061469294392919,
+          "rmse": 0.6918306539669905,
+          "r2": 0.17658394997613058,
+          "pearson": 0.7810909767586753,
+          "spearman": 0.737320457302232,
+          "n_samples": 318,
+          "drug": "Sapitinib"
+        }
+      ]
+    },
+    "PathDSP_PIU": {
+      "mean_mae": 1.1347008560738452,
+      "std_mae": 0.7632984176043804,
+      "mean_rmse": 1.2506178276144757,
+      "std_rmse": 0.731914838158808,
+      "per_drug": [
+        {
+          "mae": 0.519679482979554,
+          "rmse": 0.6770481257007875,
+          "r2": 0.1900102430001177,
+          "pearson": 0.6145672295604312,
+          "spearman": 0.6071098509493109,
+          "n_samples": 319,
+          "drug": "PD0325901"
+        },
+        {
+          "mae": 2.7879644910874997,
+          "rmse": 2.8329762915200374,
+          "r2": -10.575183204778531,
+          "pearson": 0.7985021340032952,
+          "spearman": 0.8228744011356243,
+          "n_samples": 319,
+          "drug": "Camptothecin"
+        },
+        {
+          "mae": 0.6255509020912947,
+          "rmse": 0.7501937451868702,
+          "r2": 0.03035906604256633,
+          "pearson": 0.7078980447731372,
+          "spearman": 0.6860583944193499,
+          "n_samples": 318,
+          "drug": "5-Fluorouracil"
+        },
+        {
+          "mae": 0.4200619404502916,
+          "rmse": 0.5308676882367107,
+          "r2": 0.5013245024352199,
+          "pearson": 0.8063725775518356,
+          "spearman": 0.7931497210850452,
+          "n_samples": 318,
+          "drug": "Oxaliplatin"
+        },
+        {
+          "mae": 1.2134778469672087,
+          "rmse": 1.335701796874673,
+          "r2": -1.807687195883251,
+          "pearson": 0.6405401300126077,
+          "spearman": 0.6811176525356101,
+          "n_samples": 318,
+          "drug": "Luminespib"
+        },
+        {
+          "mae": 0.6161884383808048,
+          "rmse": 0.787289722367805,
+          "r2": -0.7473623686737771,
+          "pearson": 0.572510151354542,
+          "spearman": 0.5768000822461867,
+          "n_samples": 318,
+          "drug": "Linsitinib"
+        },
+        {
+          "mae": 2.1404193331891634,
+          "rmse": 2.212024234369898,
+          "r2": -22.379341627660384,
+          "pearson": 0.6023076798336882,
+          "spearman": 0.5689956505425208,
+          "n_samples": 318,
+          "drug": "LGK974"
+        },
+        {
+          "mae": 1.6410353862586777,
+          "rmse": 1.7257079192339004,
+          "r2": -3.082209869667534,
+          "pearson": 0.7732989421867468,
+          "spearman": 0.7789682245738844,
+          "n_samples": 318,
+          "drug": "Irinotecan"
+        },
+        {
+          "mae": 0.7572081583880076,
+          "rmse": 0.9393703873429896,
+          "r2": -0.45523828117628984,
+          "pearson": 0.13655602228574792,
+          "spearman": 0.13258074092096697,
+          "n_samples": 318,
+          "drug": "SCH772984"
+        },
+        {
+          "mae": 0.6254225809459498,
+          "rmse": 0.7149983653110836,
+          "r2": 0.12051219133666902,
+          "pearson": 0.7568969305048986,
+          "spearman": 0.6877044376556927,
+          "n_samples": 318,
+          "drug": "Sapitinib"
+        }
+      ]
+    }
+  },
+  "LOCO": {
+    "FNN": {
+      "mean_mae": 0.5837208913002673,
+      "std_mae": 0.180584953716899,
+      "mean_rmse": 0.7536260019007519,
+      "std_rmse": 0.19409103586250448,
+      "per_cell": [
+        {
+          "mae": 0.9770505050931808,
+          "rmse": 1.1391039242874035,
+          "r2": -0.5268485050970033,
+          "pearson": 0.7753630618846803,
+          "spearman": 0.697529919885329,
+          "n_samples": 142,
+          "cell": "SIDM00971"
+        },
+        {
+          "mae": 0.4231763512609487,
+          "rmse": 0.5809882648108012,
+          "r2": 0.7139048143136273,
+          "pearson": 0.8715091718376256,
+          "spearman": 0.8582045464275011,
+          "n_samples": 141,
+          "cell": "SIDM00954"
+        },
+        {
+          "mae": 0.6826252406264873,
+          "rmse": 0.9411568254967609,
+          "r2": 0.0849167601571531,
+          "pearson": 0.7291718184215972,
+          "spearman": 0.6328695577721648,
+          "n_samples": 141,
+          "cell": "SIDM00885"
+        },
+        {
+          "mae": 0.619044108408774,
+          "rmse": 0.7865070712664184,
+          "r2": 0.42795626791060215,
+          "pearson": 0.8566742644299223,
+          "spearman": 0.8117770452502248,
+          "n_samples": 141,
+          "cell": "SIDM01042"
+        },
+        {
+          "mae": 0.436842596356539,
+          "rmse": 0.6039081767980929,
+          "r2": 0.7359769748532339,
+          "pearson": 0.8843707702593182,
+          "spearman": 0.7643777558970846,
+          "n_samples": 141,
+          "cell": "SIDM00562"
+        },
+        {
+          "mae": 0.7654055062456863,
+          "rmse": 0.9508401384076761,
+          "r2": 0.38065946553438945,
+          "pearson": 0.7630990750536544,
+          "spearman": 0.7103985615822594,
+          "n_samples": 141,
+          "cell": "SIDM00332"
+        },
+        {
+          "mae": 0.4292311731276783,
+          "rmse": 0.5808972225387199,
+          "r2": 0.6966131101464959,
+          "pearson": 0.8662210360195937,
+          "spearman": 0.8399075302881115,
+          "n_samples": 141,
+          "cell": "SIDM00528"
+        },
+        {
+          "mae": 0.5777814934828451,
+          "rmse": 0.7249863344052377,
+          "r2": 0.5821035725553001,
+          "pearson": 0.867974790207968,
+          "spearman": 0.7995364194966218,
+          "n_samples": 140,
+          "cell": "SIDM00241"
+        },
+        {
+          "mae": 0.3468853003079338,
+          "rmse": 0.4892836542697062,
+          "r2": 0.8038709158570483,
+          "pearson": 0.9078839486020776,
+          "spearman": 0.8279644310914738,
+          "n_samples": 140,
+          "cell": "SIDM00875"
+        },
+        {
+          "mae": 0.5791666380925999,
+          "rmse": 0.7385884067267013,
+          "r2": 0.6912010945754761,
+          "pearson": 0.8775774210165574,
+          "spearman": 0.8237762237762237,
+          "n_samples": 131,
+          "cell": "SIDM00136"
+        }
+      ]
+    },
+    "PathDSP_PIU": {
+      "mean_mae": 0.5904950157291998,
+      "std_mae": 0.20698540574841778,
+      "mean_rmse": 0.749107673830274,
+      "std_rmse": 0.21548185492573707,
+      "per_cell": [
+        {
+          "mae": 0.9780240588178727,
+          "rmse": 1.1079676113507329,
+          "r2": -0.4445194114992257,
+          "pearson": 0.75801544346522,
+          "spearman": 0.6719845931712879,
+          "n_samples": 142,
+          "cell": "SIDM00971"
+        },
+        {
+          "mae": 0.39776852239478144,
+          "rmse": 0.5210189621760177,
+          "r2": 0.7699178706295517,
+          "pearson": 0.9048907296556263,
+          "spearman": 0.8693351598955434,
+          "n_samples": 141,
+          "cell": "SIDM00954"
+        },
+        {
+          "mae": 0.7081036849330503,
+          "rmse": 0.9049140297207012,
+          "r2": 0.15403722760646943,
+          "pearson": 0.7402111768470455,
+          "spearman": 0.6396335459565905,
+          "n_samples": 141,
+          "cell": "SIDM00885"
+        },
+        {
+          "mae": 0.7027379094180486,
+          "rmse": 0.9004980384036949,
+          "r2": 0.25012390277530594,
+          "pearson": 0.8105457060462007,
+          "spearman": 0.7752129800077057,
+          "n_samples": 141,
+          "cell": "SIDM01042"
+        },
+        {
+          "mae": 0.4642213968996038,
+          "rmse": 0.6156661323229996,
+          "r2": 0.7255959540029637,
+          "pearson": 0.8738730112656121,
+          "spearman": 0.7204075516931375,
+          "n_samples": 141,
+          "cell": "SIDM00562"
+        },
+        {
+          "mae": 0.8675681117274765,
+          "rmse": 1.0318672656645522,
+          "r2": 0.27060604090313634,
+          "pearson": 0.7652878880999456,
+          "spearman": 0.6847895885954021,
+          "n_samples": 141,
+          "cell": "SIDM00332"
+        },
+        {
+          "mae": 0.3939469848224457,
+          "rmse": 0.5517395405767288,
+          "r2": 0.726305274670915,
+          "pearson": 0.8541559799724421,
+          "spearman": 0.8210282974442398,
+          "n_samples": 141,
+          "cell": "SIDM00528"
+        },
+        {
+          "mae": 0.514834679503526,
+          "rmse": 0.6850681405910192,
+          "r2": 0.6268559169513617,
+          "pearson": 0.8614141396987552,
+          "spearman": 0.7830093372110825,
+          "n_samples": 140,
+          "cell": "SIDM00241"
+        },
+        {
+          "mae": 0.31311851698639137,
+          "rmse": 0.4405465612117046,
+          "r2": 0.8409974033082361,
+          "pearson": 0.9210062443977229,
+          "spearman": 0.8508723304463006,
+          "n_samples": 140,
+          "cell": "SIDM00875"
+        },
+        {
+          "mae": 0.5646262917888016,
+          "rmse": 0.7317904562845884,
+          "r2": 0.6968592910603584,
+          "pearson": 0.8946350955761848,
+          "spearman": 0.8513158597128063,
+          "n_samples": 131,
+          "cell": "SIDM00136"
+        }
+      ]
+    }
+  },
+  "DoubleColdStart": {
+    "split_name": "double_cold_start_seed_42",
+    "val_strategy": "random_pair",
+    "n_test_samples": 734,
+    "n_test_drugs": 21,
+    "n_test_cells": 47,
+    "n_actual_test_drugs": 17,
+    "n_actual_test_cells": 47,
+    "unrepresented_test_drugs": [
+      "AZD6482",
+      "GSK269962A",
+      "PF-4708671",
+      "Tozasertib"
+    ],
+    "unrepresented_test_cells": [],
+    "FNN_pooled": {
+      "mae": 1.0285083522407303,
+      "rmse": 1.4891335402210448,
+      "r2": -0.59721067139753,
+      "pearson": 0.07725664495862115,
+      "spearman": 0.21856965426093006,
+      "n_samples": 734
+    },
+    "PathDSP_PIU_pooled": {
+      "mae": 0.9499646724926242,
+      "rmse": 1.37106042447142,
+      "r2": -0.3539670717069803,
+      "pearson": 0.10894446030668162,
+      "spearman": 0.2333076299611724,
+      "n_samples": 734
+    },
+    "FNN": {
+      "mae": 1.0285083522407303,
+      "rmse": 1.4891335402210448,
+      "r2": -0.59721067139753,
+      "pearson": 0.07725664495862115,
+      "spearman": 0.21856965426093006,
+      "n_samples": 734
+    },
+    "PathDSP_PIU": {
+      "mae": 0.9499646724926242,
+      "rmse": 1.37106042447142,
+      "r2": -0.3539670717069803,
+      "pearson": 0.10894446030668162,
+      "spearman": 0.2333076299611724,
+      "n_samples": 734
+    },
+    "macro_metrics": {
+      "fnn_by_drug": {
+        "entity_type": "drug",
+        "n_entities_evaluated": 17,
+        "n_entities_total": 17,
+        "macro_mae_mean": 1.0122784576107695,
+        "macro_mae_std": 0.899408995606709,
+        "macro_rmse_mean": 1.1683122764856293,
+        "macro_rmse_std": 0.8796240804831889,
+        "macro_pearson_mean": 0.3106301499159695,
+        "macro_pearson_std": 0.1274572834174089,
+        "macro_spearman_mean": 0.2931426851089167,
+        "macro_spearman_std": 0.14266793460089505
+      },
+      "piu_by_drug": {
+        "entity_type": "drug",
+        "n_entities_evaluated": 17,
+        "n_entities_total": 17,
+        "macro_mae_mean": 0.9334837015457548,
+        "macro_mae_std": 0.8234998703095331,
+        "macro_rmse_mean": 1.0766347903463573,
+        "macro_rmse_std": 0.8061042701990624,
+        "macro_pearson_mean": 0.33080790575991925,
+        "macro_pearson_std": 0.17650821139869607,
+        "macro_spearman_mean": 0.3228527511719045,
+        "macro_spearman_std": 0.17076583003822507
+      },
+      "fnn_by_cell": {
+        "entity_type": "cell",
+        "n_entities_evaluated": 47,
+        "n_entities_total": 47,
+        "macro_mae_mean": 1.0375001688973762,
+        "macro_mae_std": 0.18962633192424688,
+        "macro_rmse_mean": 1.4917626410928995,
+        "macro_rmse_std": 0.19425540283019993,
+        "macro_pearson_mean": -0.019564071435254193,
+        "macro_pearson_std": 0.24494171478543836,
+        "macro_spearman_mean": 0.17549619758631024,
+        "macro_spearman_std": 0.24361927677573775
+      },
+      "piu_by_cell": {
+        "entity_type": "cell",
+        "n_entities_evaluated": 47,
+        "n_entities_total": 47,
+        "macro_mae_mean": 0.9540364566672455,
+        "macro_mae_std": 0.1879281606921346,
+        "macro_rmse_mean": 1.3648579690687506,
+        "macro_rmse_std": 0.19871094062920583,
+        "macro_pearson_mean": 0.005807003863939021,
+        "macro_pearson_std": 0.2804444959741979,
+        "macro_spearman_mean": 0.16070227227924352,
+        "macro_spearman_std": 0.28483693526225196
+      }
+    },
+    "statistical_tests": {
+      "observation_bootstrap": {
+        "analysis_type": "observation_level_bootstrap",
+        "resampling_unit": "observation_pair",
+        "n_boot": 1000,
+        "n_samples": 734,
+        "observed_delta_mae": 0.0785437822341919,
+        "bootstrap_mean_delta_mae": 0.07881426066160202,
+        "delta_mae_ci_lower": 0.04655254185199738,
+        "delta_mae_ci_upper": 0.1115190178155899,
+        "observed_delta_rmse": 0.11807310581207275,
+        "bootstrap_mean_delta_rmse": 0.11829188466072083,
+        "delta_rmse_ci_lower": 0.08974739611148834,
+        "delta_rmse_ci_upper": 0.14641633331775666,
+        "delta_mae_mean": 0.07881426066160202,
+        "delta_rmse_mean": 0.11829188466072083
+      },
+      "drug_clustered_bootstrap": {
+        "analysis_type": "clustered_bootstrap",
+        "resampling_unit": "drug",
+        "n_clusters": 17,
+        "n_observations": 734,
+        "n_boot": 1000,
+        "observed_delta_mae": 0.0785437822341919,
+        "bootstrap_mean_delta_mae": 0.07852248847484589,
+        "delta_mae_ci_lower": 0.014759881794452668,
+        "delta_mae_ci_upper": 0.1418927788734436,
+        "observed_delta_rmse": 0.11807310581207275,
+        "bootstrap_mean_delta_rmse": 0.11624371260404587,
+        "delta_rmse_ci_lower": 0.053829753398895265,
+        "delta_rmse_ci_upper": 0.1674817621707916
+      },
+      "cell_clustered_bootstrap": {
+        "analysis_type": "clustered_bootstrap",
+        "resampling_unit": "cell",
+        "n_clusters": 47,
+        "n_observations": 734,
+        "n_boot": 1000,
+        "observed_delta_mae": 0.0785437822341919,
+        "bootstrap_mean_delta_mae": 0.07840587198734283,
+        "delta_mae_ci_lower": 0.04556828439235687,
+        "delta_mae_ci_upper": 0.10800707191228866,
+        "observed_delta_rmse": 0.11807310581207275,
+        "bootstrap_mean_delta_rmse": 0.11848199367523193,
+        "delta_rmse_ci_lower": 0.09020848870277405,
+        "delta_rmse_ci_upper": 0.14312256574630738
+      },
+      "two_way_clustered_bootstrap": {
+        "analysis_type": "two_way_clustered_bootstrap",
+        "resampling_method": "two_way_pigeonhole_bootstrap",
+        "resampling_units": [
+          "drug",
+          "cell"
+        ],
+        "n_unique_drugs": 17,
+        "n_unique_cells": 47,
+        "n_observations": 734,
+        "n_boot_valid": 1000,
+        "observed_delta_mae": 0.07854367974810617,
+        "bootstrap_mean_delta_mae": 0.07893094722317993,
+        "delta_mae_ci_lower": 0.007305976206596993,
+        "delta_mae_ci_upper": 0.14915347454240635,
+        "observed_delta_rmse": 0.11807311574962487,
+        "bootstrap_mean_delta_rmse": 0.11778073035746753,
+        "delta_rmse_ci_lower": 0.04569633732060031,
+        "delta_rmse_ci_upper": 0.17714976139014063
+      }
+    },
+    "bootstrap": {
+      "analysis_type": "observation_level_bootstrap",
+      "resampling_unit": "observation_pair",
+      "n_boot": 1000,
+      "n_samples": 734,
+      "observed_delta_mae": 0.0785437822341919,
+      "bootstrap_mean_delta_mae": 0.07881426066160202,
+      "delta_mae_ci_lower": 0.04655254185199738,
+      "delta_mae_ci_upper": 0.1115190178155899,
+      "observed_delta_rmse": 0.11807310581207275,
+      "bootstrap_mean_delta_rmse": 0.11829188466072083,
+      "delta_rmse_ci_lower": 0.08974739611148834,
+      "delta_rmse_ci_upper": 0.14641633331775666,
+      "delta_mae_mean": 0.07881426066160202,
+      "delta_rmse_mean": 0.11829188466072083
+    }
+  }
+}

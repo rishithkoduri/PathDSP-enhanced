@@ -1,0 +1,37 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.10.0, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\rishi\AppData\Local\Programs\Python\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: D:\codes\PS\Projects\Project_3\implement\scratch
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.13.0, typeguard-2.13.3
+collecting ... collected 26 items
+
+tests/test_data.py::test_cached_data_shapes PASSED                       [  3%]
+tests/test_data.py::test_no_nans_or_infs PASSED                          [  7%]
+tests/test_data.py::test_data_preprocessor_leakage_safety PASSED         [ 11%]
+tests/test_data.py::test_drug_response_dataset PASSED                    [ 15%]
+tests/test_evaluate.py::test_compute_metrics PASSED                      [ 19%]
+tests/test_evaluate.py::test_observation_paired_bootstrap PASSED         [ 23%]
+tests/test_evaluate.py::test_clustered_bootstrap PASSED                  [ 26%]
+tests/test_evaluate.py::test_two_way_clustered_bootstrap_multiplicity PASSED [ 30%]
+tests/test_evaluate.py::test_macro_averaged_metrics PASSED               [ 34%]
+tests/test_model.py::test_submodules_shapes PASSED                       [ 38%]
+tests/test_model.py::test_full_model_forward PASSED                      [ 42%]
+tests/test_model.py::test_baseline_fnn_forward PASSED                    [ 46%]
+tests/test_model.py::test_gradient_step PASSED                           [ 50%]
+tests/test_model.py::test_explainability PASSED                          [ 53%]
+tests/test_model.py::test_dg_net_ablation_no_leakage PASSED              [ 57%]
+tests/test_model.py::test_cell_modality_ablation_no_leakage PASSED       [ 61%]
+tests/test_splits.py::test_random_split_bounds_and_disjointness PASSED   [ 65%]
+tests/test_splits.py::test_invalid_split_ratios PASSED                   [ 69%]
+tests/test_splits.py::test_out_of_bounds_index_rejection PASSED          [ 73%]
+tests/test_splits.py::test_duplicate_index_rejection PASSED              [ 76%]
+tests/test_splits.py::test_lodo_random_and_entity_disjoint PASSED        [ 80%]
+tests/test_splits.py::test_loco_random_and_entity_disjoint PASSED        [ 84%]
+tests/test_splits.py::test_double_cold_start_leakage_and_unrepresented_reporting PASSED [ 88%]
+tests/test_splits.py::test_double_cold_start_entity_disjoint PASSED      [ 92%]
+tests/test_splits.py::test_save_split_without_parent_directory PASSED    [ 96%]
+tests/test_splits.py::test_generate_random_split_with_calibration PASSED [100%]
+
+============================= 26 passed in 9.09s ==============================

@@ -1,0 +1,68 @@
+# Model architecture configuration for PathDSP-PIU and baselines
+
+pathdsp_piu:
+  # Drug Encoder: concatenates CHEM (256) and DG-Net (196) -> e_d
+  drug_encoder:
+    chem_dim: 256
+    dg_dim: 196
+    hidden_dim: 256
+    embedding_dim: 128
+    dropout: 0.15
+    activation: 'gelu'
+
+  # Cell-line Pathway Encoder: encodes P x M pathway matrix (P=196, M=3 [EXP, MUT, CNV]) -> h(c, p)
+  pathway_encoder:
+    num_pathways: 196
+    num_modalities: 3
+    modality_hidden_dim: 64
+    pathway_embed_dim: 32
+    dropout: 0.10
+    activation: 'gelu'
+
+  # Drug-Conditioned Pathway Gating: g(d, p) = sigmoid(MLP([e_d, h(c, p), DGNet(d, p)]))
+  # h'(d, p) = g(d, p) * h(c, p)
+  gating:
+    hidden_dim: 64
+    dropout: 0.10
+
+  # Multiplicative Pathway Interaction: z(d, p) = (U e_d) * (V h'(d, p))
+  # Aggregated: z(d) = sum_p alpha(d, p) * z(d, p)
+  interaction:
+    interaction_dim: 32
+    attention_dim: 32
+    dropout: 0.10
+    use_residual: true
+
+  # Regression Head: y_pred = RegressionHead([e_d, h_c, z_d, residual])
+  regression_head:
+    hidden_dims: [128, 64]
+    dropout: 0.15
+    activation: 'gelu'
+
+baseline_fnn:
+  # Replicating original PathDSP FNN architecture (Li et al. / Tang & Gottlieb 2021)
+  input_dim: 1031
+  hidden_layers: [1000, 800, 500, 100]
+  dropout: 0.10
+  activation: 'elu'
+  learning_rate: 0.0004
+  weight_decay: 0.00001
+  batch_size: 128  # Scaled for modern GPU throughput
+
+ml_baselines:
+  elastic_net:
+    alpha: 0.01
+    l1_ratio: 0.5
+    max_iter: 1000
+  random_forest:
+    n_estimators: 100
+    max_depth: 16
+    n_jobs: -1
+  xgboost:
+    n_estimators: 150
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    n_jobs: -1
+    tree_method: 'hist'

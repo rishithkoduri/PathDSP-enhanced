@@ -1,0 +1,27 @@
+{
+  "protocol": "Strict split conformal prediction with held-out calibration partition",
+  "calibration_manifest": "data/splits/calibration_manifest.json",
+  "random_split_file": "data/splits/random_split.json",
+  "calibration_predictions_csv": "results/predictions/conformal_calibration_predictions.csv",
+  "n_train_samples": 30185,
+  "n_val_samples": 1886,
+  "n_calibration_samples": 1887,
+  "n_test_samples": 3774,
+  "disjointness_verified": true,
+  "zero_contamination_verified": true,
+  "quantile_formula": "np.quantile(scores, min(1.0, ceil((n+1)*(1-alpha))/n), method='higher')",
+  "conformal_90": {
+    "target": 0.9,
+    "empirical_coverage": 0.9003709591944886,
+    "mean_interval_width": 1.9804991483688354,
+    "coverage_gap": 0.00037095919448859593,
+    "calibrated_quantile": 7.514800071716309
+  },
+  "conformal_95": {
+    "target": 0.95,
+    "empirical_coverage": 0.9562798092209857,
+    "mean_interval_width": 3.1369175910949707,
+    "coverage_gap": 0.006279809220985699,
+    "calibrated_quantile": 11.9027099609375
+  }
+}

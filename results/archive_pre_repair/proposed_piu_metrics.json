@@ -1,0 +1,22 @@
+{
+  "mae": 0.3095967111641491,
+  "rmse": 0.41015473841680955,
+  "r2": 0.8847272858426968,
+  "pearson": 0.9426773838839838,
+  "spearman": 0.9151587749294023,
+  "n_samples": 3774,
+  "conformal_90": {
+    "target_coverage": 0.9,
+    "empirical_coverage": 0.8987811340752517,
+    "mean_interval_width": 2.019655466079712,
+    "coverage_gap": -0.0012188659247482914
+  },
+  "conformal_95": {
+    "target_coverage": 0.95,
+    "empirical_coverage": 0.9531001589825119,
+    "mean_interval_width": 3.050926446914673,
+    "coverage_gap": 0.0031001589825119247
+  },
+  "error_unc_pearson": 0.17839497327804565,
+  "error_unc_spearman": 0.13128514415083242
+}

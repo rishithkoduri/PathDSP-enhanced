@@ -1,0 +1,185 @@
+{
+  "checkpoints": {
+    "baseline_fnn.pt": {
+      "file": "baseline_fnn.pt",
+      "size_mb": 26.15,
+      "keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "best_val_mae",
+        "history"
+      ],
+      "epoch": 76,
+      "best_val_mae": 0.3021,
+      "n_params": 10,
+      "load_status": "SUCCESS"
+    },
+    "double_cold_start_fnn.pt": {
+      "file": "double_cold_start_fnn.pt",
+      "size_mb": 26.15,
+      "keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "best_val_mae",
+        "history"
+      ],
+      "epoch": 68,
+      "best_val_mae": 0.2961,
+      "n_params": 10,
+      "load_status": "SUCCESS"
+    },
+    "double_cold_start_piu.pt": {
+      "file": "double_cold_start_piu.pt",
+      "size_mb": 3.2,
+      "keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "best_val_mae",
+        "history"
+      ],
+      "epoch": 31,
+      "best_val_mae": 0.3114,
+      "n_params": 30,
+      "load_status": "SUCCESS"
+    },
+    "pathdsp_piu_seed_1042.pt": {
+      "file": "pathdsp_piu_seed_1042.pt",
+      "size_mb": 3.2,
+      "keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "best_val_mae",
+        "history"
+      ],
+      "epoch": 54,
+      "best_val_mae": 0.3336,
+      "n_params": 30,
+      "load_status": "SUCCESS"
+    },
+    "pathdsp_piu_seed_2042.pt": {
+      "file": "pathdsp_piu_seed_2042.pt",
+      "size_mb": 3.2,
+      "keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "best_val_mae",
+        "history"
+      ],
+      "epoch": 15,
+      "best_val_mae": 0.3371,
+      "n_params": 30,
+      "load_status": "SUCCESS"
+    },
+    "pathdsp_piu_seed_42.pt": {
+      "file": "pathdsp_piu_seed_42.pt",
+      "size_mb": 3.2,
+      "keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "best_val_mae",
+        "history"
+      ],
+      "epoch": 28,
+      "best_val_mae": 0.3352,
+      "n_params": 30,
+      "load_status": "SUCCESS"
+    },
+    "variant_g_single_model.pt": {
+      "file": "variant_g_single_model.pt",
+      "size_mb": 3.2,
+      "keys": [
+        "epoch",
+        "model_state_dict",
+        "optimizer_state_dict",
+        "best_val_mae",
+        "history"
+      ],
+      "epoch": 28,
+      "best_val_mae": 0.3352,
+      "n_params": 30,
+      "load_status": "SUCCESS"
+    }
+  },
+  "predictions": {
+    "baseline_predictions.csv": {
+      "rows": 3774,
+      "columns": [
+        "y_true",
+        "DrugMean",
+        "CellMean",
+        "AdditiveMean",
+        "ElasticNet",
+        "RandomForest",
+        "XGBoost",
+        "PathDSP_FNN"
+      ]
+    },
+    "conformal_calibration_predictions.csv": {
+      "rows": 1887,
+      "columns": [
+        "drug",
+        "cell",
+        "y_true",
+        "pred_seed_42",
+        "pred_seed_1042",
+        "pred_seed_2042",
+        "pred_ensemble_mean",
+        "ensemble_std",
+        "nonconformity_score"
+      ]
+    },
+    "double_cold_start_predictions.csv": {
+      "rows": 734,
+      "columns": [
+        "sample_idx",
+        "drug",
+        "cell",
+        "y_true",
+        "y_pred_fnn",
+        "y_pred_piu",
+        "abs_error_fnn",
+        "abs_error_piu"
+      ]
+    },
+    "piu_ablation_dg_predictions.csv": {
+      "rows": 3774,
+      "columns": [
+        "drug",
+        "cell",
+        "y_true",
+        "pred_seed_42",
+        "pred_seed_1042",
+        "pred_seed_2042",
+        "pred_ensemble_mean",
+        "ensemble_std"
+      ]
+    },
+    "piu_ensemble_predictions.csv": {
+      "rows": 3774,
+      "columns": [
+        "drug",
+        "cell",
+        "y_true",
+        "y_pred_mean",
+        "ensemble_std",
+        "abs_error"
+      ]
+    },
+    "variant_g_predictions.csv": {
+      "rows": 3774,
+      "columns": [
+        "drug",
+        "cell",
+        "y_true",
+        "y_pred",
+        "abs_error"
+      ]
+    }
+  }
+}
