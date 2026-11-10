@@ -1,36 +1,34 @@
-# GNN-PathDSP: Autoregressive & Topological Drug Sensitivity Prediction via Graph Attention Networks and Cross-Modal Pathway Fusion
+# GNN-PathDSP:Topological Drug Sensitivity Prediction via Graph Attention Networks and Cross-Modal Pathway Fusion
 
 ## Table of Contents
 
- 1. [Abstract](#1-abstract)
+1.  [Abstract](#1-abstract)
 
- 2. [Introduction & Research Motivation](#2-introduction--research-motivation)
+2.  [Introduction & Research Motivation](#2-introduction--research-motivation)
 
- 3. [Architectural Critique of the Baseline (PathDSP)](#3-architectural-critique-of-the-baseline-pathdsp)
+3.  [Architectural Critique of the Baseline (PathDSP)](#3-architectural-critique-of-the-baseline-pathdsp)
 
- 4. [Dataset Alignment & Multi-Omic Preprocessing](#4-dataset-alignment--multi-omic-preprocessing)
+4.  [Dataset Alignment & Multi-Omic Preprocessing](#4-dataset-alignment--multi-omic-preprocessing)
 
- 5. [Methodology: The GNN-PathDSP Architecture](#5-methodology-the-gnn-pathdsp-architecture)
+5.  [Methodology: The GNN-PathDSP Architecture](#5-methodology-the-gnn-pathdsp-architecture)
+    - [5.1 Dual Multi-Head GATv2 Interactome Encoders](#51-dual-multi-head-gatv2-interactome-encoders)
 
-    * [5.1 Dual Multi-Head GATv2 Interactome Encoders](#51-dual-multi-head-gatv2-interactome-encoders)
+    - [5.2 Multi-Scale Pathway Readout](#52-multi-scale-pathway-readout)
 
-    * [5.2 Multi-Scale Pathway Readout](#52-multi-scale-pathway-readout)
+    - [5.3 Cross-Modal Attention Fusion](#53-cross-modal-attention-fusion)
 
-    * [5.3 Cross-Modal Attention Fusion](#53-cross-modal-attention-fusion)
+    - [5.4 Residual Regression Head](#54-residual-regression-head)
 
-    * [5.4 Residual Regression Head](#54-residual-regression-head)
+6.  [Systems Engineering & VRAM Optimization](#6-systems-engineering--vram-optimization)
 
- 6. [Systems Engineering & VRAM Optimization](#6-systems-engineering--vram-optimization)
+7.  [Experimental Protocols & Evaluation Splits](#7-experimental-protocols--evaluation-splits)
 
- 7. [Experimental Protocols & Evaluation Splits](#7-experimental-protocols--evaluation-splits)
+8.  [Mathematical Normalization & Variance Harmonization](#8-mathematical-normalization--variance-harmonization)
+    - [8.1 Step-by-Step Mathematical Derivation (LODO Example)](#81-step-by-step-mathematical-derivation-lodo-example)
 
- 8. [Mathematical Normalization & Variance Harmonization](#8-mathematical-normalization--variance-harmonization)
+    - [8.2 Technical Rigor & Academic Validity](#82-technical-rigor--academic-validity)
 
-    * [8.1 Step-by-Step Mathematical Derivation (LODO Example)](#81-step-by-step-mathematical-derivation-lodo-example)
-
-    * [8.2 Technical Rigor & Academic Validity](#82-technical-rigor--academic-validity)
-
- 9. [Comprehensive Quantitative Results](#9-comprehensive-quantitative-results)
+9.  [Comprehensive Quantitative Results](#9-comprehensive-quantitative-results)
 
 10. [Mechanistic Explainability & Biological Attribution](#10-mechanistic-explainability--biological-attribution)
 
@@ -54,48 +52,46 @@ We introduce **GNN-PathDSP**, a multimodal deep graph learning architecture that
 
 High-throughput pharmacogenomic screening initiatives—most notably the **Genomics of Drug Sensitivity in Cancer (GDSC)** and the **Cancer Cell Line Encyclopedia (CCLE)**—have cataloged the pharmacological responses of hundreds of human cancer cell lines against hundreds of anti-cancer therapeutics. However, translating raw multi-omic profiles (basal gene expression, somatic mutations, and copy number variations) into robust predictive models remains hindered by the classic bioinformatics curse of dimensionality: the feature space ($>20,000$ human genes) vastly outnumbers the available biological samples.
 
-To constrain dimensionality and inject domain knowledge, **PathDSP** (Tang & Gottlieb, *Briefings in Bioinformatics*, 2021) established a leading paradigm by compressing raw gene-level multi-omics into **196 continuous pathway enrichment scores** curated from the MSigDB Pathway Interaction Database (PID), concatenated with **256-bit Morgan circular fingerprints** representing drug chemistry.
+To constrain dimensionality and inject domain knowledge, **PathDSP** (Tang & Gottlieb, _Briefings in Bioinformatics_, 2021) established a leading paradigm by compressing raw gene-level multi-omics into **196 continuous pathway enrichment scores** curated from the MSigDB Pathway Interaction Database (PID), concatenated with **256-bit Morgan circular fingerprints** representing drug chemistry.
 
-Despite its strong performance on random cross-validation splits, PathDSP treats pathway enrichment as a fixed, pre-processing step and delegates all learning to a dense Feed-Forward Neural Network (FNN). Consequently, the model cannot adapt gene-to-gene signaling dynamics in response to specific chemical perturbations, nor can it recover gene-level biomarkers. **GNN-PathDSP** resolves this fundamental limitation by moving the biological network *inside* the end-to-end differentiable neural architecture.
+Despite its strong performance on random cross-validation splits, PathDSP treats pathway enrichment as a fixed, pre-processing step and delegates all learning to a dense Feed-Forward Neural Network (FNN). Consequently, the model cannot adapt gene-to-gene signaling dynamics in response to specific chemical perturbations, nor can it recover gene-level biomarkers. **GNN-PathDSP** resolves this fundamental limitation by moving the biological network _inside_ the end-to-end differentiable neural architecture.
 
 ## 3. Architectural Critique of the Baseline (PathDSP)
 
 A rigorous examination of the FNN-based PathDSP architecture exposes three critical structural vulnerabilities:
 
 1. **Topological Blindness via Static Pre-Aggregation:**
-   By averaging or enriching gene-level signals into 196 static scalars *prior* to neural network training, the FNN is completely blind to the underlying graph topology of the Protein-Protein Interaction (PPI) interactome. Upstream master regulators and downstream effector proteins are collapsed into a single summary statistic, destroying cascade hierarchy.
+   By averaging or enriching gene-level signals into 196 static scalars _prior_ to neural network training, the FNN is completely blind to the underlying graph topology of the Protein-Protein Interaction (PPI) interactome. Upstream master regulators and downstream effector proteins are collapsed into a single summary statistic, destroying cascade hierarchy.
 
 2. **Severe In-Distribution Overfitting vs. Out-of-Distribution (OOD) Collapse:**
-   In random 10-Fold Cross-Validation (CV), every cell line and every drug appears in both the training and test sets (only the specific $(c, d)$ pair is held out). A high-capacity FNN easily memorizes the 319 static cell-line enrichment vectors as unique lookup keys, achieving an artificially inflated Pearson Correlation Coefficient ($\text{PCC} = 0.96$, $R^2 = 0.92$). However, when evaluated under **Leave-One-Cell-Out (LOCO)** or **Leave-One-Drug-Out (LODO)** protocols—which represent the true clinical reality of predicting responses for a *new patient* or a *novel experimental compound*—the FNN's error increases precipitously ($+68.5\%$ in LOCO RMSE and $+137.1\%$ in LODO RMSE).
+   In random 10-Fold Cross-Validation (CV), every cell line and every drug appears in both the training and test sets (only the specific $(c, d)$ pair is held out). A high-capacity FNN easily memorizes the 319 static cell-line enrichment vectors as unique lookup keys, achieving an artificially inflated Pearson Correlation Coefficient ($\text{PCC} = 0.96$, $R^2 = 0.92$). However, when evaluated under **Leave-One-Cell-Out (LOCO)** or **Leave-One-Drug-Out (LODO)** protocols—which represent the true clinical reality of predicting responses for a _new patient_ or a _novel experimental compound_—the FNN's error increases precipitously ($+68.5\%$ in LOCO RMSE and $+137.1\%$ in LODO RMSE).
 
 3. **Coarse-Grained Explainability:**
-   Post-hoc feature attribution (e.g., SHAP) on PathDSP is strictly restricted to the pathway level (e.g., implicating *PID_PI3KCI_PATHWAY* as a whole). It is mathematically incapable of identifying the specific **driver genes**, **somatic mutations**, or **protein-protein signaling edges** mediating drug resistance or sensitivity.
+   Post-hoc feature attribution (e.g., SHAP) on PathDSP is strictly restricted to the pathway level (e.g., implicating _PID_PI3KCI_PATHWAY_ as a whole). It is mathematically incapable of identifying the specific **driver genes**, **somatic mutations**, or **protein-protein signaling edges** mediating drug resistance or sensitivity.
 
 ## 4. Dataset Alignment & Multi-Omic Preprocessing
 
 To guarantee a fair, rigorous, apples-to-apples comparison with the PathDSP baseline, GNN-PathDSP enforces exact cohort and feature space alignment:
 
-* **Pharmacogenomic Cohort:** **319 cancer cell lines** and **153 small-molecule inhibitors** from the **GDSC1** release, with external cross-study validation conducted on shared cell-drug pairs in the **CCLE** database.
+- **Pharmacogenomic Cohort:** **319 cancer cell lines** and **153 small-molecule inhibitors** from the **GDSC1** release, with external cross-study validation conducted on shared cell-drug pairs in the **CCLE** database.
 
-* **Pathway & Gene Universe (**$N = 2,500$ **Genes):** Extracted from the **196 canonical cancer signaling pathways** in the MSigDB **Pathway Interaction Database (PID)**, augmented with all annotated pharmacological target genes of the 153 drugs.
+- **Pathway & Gene Universe (**$N = 2,500$ **Genes):** Extracted from the **196 canonical cancer signaling pathways** in the MSigDB **Pathway Interaction Database (PID)**, augmented with all annotated pharmacological target genes of the 153 drugs.
 
-* **Interactome Graph Topology (**$\mathcal{G}_{\text{PPI}} = (\mathcal{V}, \mathcal{E})$**):** Constructed from the **STRING v11** database. Only high-confidence physical and functional protein-protein interactions with a combined confidence score $\ge 750$ are retained, yielding a sparse, biologically validated undirected graph over the $N = 2,500$ nodes.
+- **Interactome Graph Topology (**$\mathcal{G}_{\text{PPI}} = (\mathcal{V}, \mathcal{E})$**):** Constructed from the **STRING v11** database. Only high-confidence physical and functional protein-protein interactions with a combined confidence score $\ge 750$ are retained, yielding a sparse, biologically validated undirected graph over the $N = 2,500$ nodes.
 
-* **Cell Line Multi-Omic Node Features (**$\mathbf{X}_{\text{cell}} \in \mathbb{R}^{N \times 3}$**):** For each cell line $c$ and gene node $i \in \{1, \dots, N\}$:
+- **Cell Line Multi-Omic Node Features (**$\mathbf{X}_{\text{cell}} \in \mathbb{R}^{N \times 3}$**):** For each cell line $c$ and gene node $i \in \{1, \dots, N\}$:
+  1. _Transcriptomics:_ RMA-normalized basal gene expression, standardized via z-score across the cohort.
 
-  1. *Transcriptomics:* RMA-normalized basal gene expression, standardized via z-score across the cohort.
+  2. _Genomics (Mutation):_ Binary somatic mutation indicator ($1$ if non-synonymous coding mutation present, $0$ otherwise).
 
-  2. *Genomics (Mutation):* Binary somatic mutation indicator ($1$ if non-synonymous coding mutation present, $0$ otherwise).
+  3. _Genomics (CNV):_ GISTIC2 copy number variation score, normalized to the continuous range $[-1, 1]$.
 
-  3. *Genomics (CNV):* GISTIC2 copy number variation score, normalized to the continuous range $[-1, 1]$.
+- **Drug Target & Chemical Features:**
+  1. _Drug Graph Node Features (_$\mathbf{X}_{\text{drug}} \in \mathbb{R}^{N \times 2}$_):_ Channel 1 encodes the binary direct drug-target indicator mask on $\mathcal{G}_{\text{PPI}}$; Channel 2 encodes the **Random Walk with Restart (RWR)** network diffusion profile (restart probability $\alpha = 0.5$), capturing downstream network proximity of the drug's targets.
 
-* **Drug Target & Chemical Features:**
+  2. _Chemical Structure Vector (_$\mathbf{f}_{\text{chem}} \in \{0, 1\}^{256}$_):_ **256-bit Morgan Circular Fingerprint** (ECFP6 equivalent, radius $= 3$) computed via RDKit from canonical SMILES strings.
 
-  1. *Drug Graph Node Features (*$\mathbf{X}_{\text{drug}} \in \mathbb{R}^{N \times 2}$*):* Channel 1 encodes the binary direct drug-target indicator mask on $\mathcal{G}_{\text{PPI}}$; Channel 2 encodes the **Random Walk with Restart (RWR)** network diffusion profile (restart probability $\alpha = 0.5$), capturing downstream network proximity of the drug's targets.
-
-  2. *Chemical Structure Vector (*$\mathbf{f}_{\text{chem}} \in \{0, 1\}^{256}$*):* **256-bit Morgan Circular Fingerprint** (ECFP6 equivalent, radius $= 3$) computed via RDKit from canonical SMILES strings.
-
-* **Target Variable (**$y$**):** Standardized $-\log_{10}(\text{IC}_{50})$ values representing drug potency.
+- **Target Variable (**$y$**):** Standardized $-\log_{10}(\text{IC}_{50})$ values representing drug potency.
 
 ## 5. Methodology: The GNN-PathDSP Architecture
 
@@ -138,7 +134,7 @@ GNN-PathDSP consists of four synergistic, end-to-end differentiable modules desi
                          └─────────────────┬─────────────────┘
                                            │
                                            ▼
-                              Predicted -log10(IC50) + 
+                              Predicted -log10(IC50) +
                           Gene Saliency & PPI Edge Attention
 
 ```
@@ -200,12 +196,11 @@ To resolve this, we engineered two core systems optimizations:
 1. **Zero-Duplication Tensor Dataset:** Cell multi-omic tensors $(319 \times 2500 \times 3)$ and drug target tensors $(153 \times 2500 \times 2)$ are stored once in contiguous memory. Pairs are indexed strictly via lightweight integer tuples `(cell_idx, drug_idx, y)`.
 
 2. **2D Macro-Block Sampler (**$16 \times 16$ **Grid):** During training, our custom sampler constructs mini-batches by sampling a dense sub-grid of at most $16$ unique cell lines and $16$ unique drugs (yielding an effective batch size of up to $16 \times 16 = 256$ observed pairs). Within each forward pass:
+   - The GATv2 encoders execute message-passing on **at most** $16$ **cell graphs and** $16$ **drug graphs**.
 
-   * The GATv2 encoders execute message-passing on **at most** $16$ **cell graphs and** $16$ **drug graphs**.
+   - The resulting node/pathway embeddings are gathered via fast GPU index-select operations (`H_cell[batch_cell_idx]`, `H_drug[batch_drug_idx]`) to evaluate all $256$ cross-modal attention pairs in parallel.
 
-   * The resulting node/pathway embeddings are gathered via fast GPU index-select operations (`H_cell[batch_cell_idx]`, `H_drug[batch_drug_idx]`) to evaluate all $256$ cross-modal attention pairs in parallel.
-
-   * This reduces GNN compute and VRAM overhead by $16\times$ **(**$93.75\%$ **reduction)**, enabling rapid training on an **NVIDIA A100 GPU** using `bfloat16` mixed precision, `TF32` tensor cores, `AdamW` ($\text{lr} = 10^{-3}$, weight decay $= 10^{-4}$), and a Cosine Annealing learning rate schedule.
+   - This reduces GNN compute and VRAM overhead by $16\times$ **(**$93.75\%$ **reduction)**, enabling rapid training on an **NVIDIA A100 GPU** using `bfloat16` mixed precision, `TF32` tensor cores, `AdamW` ($\text{lr} = 10^{-3}$, weight decay $= 10^{-4}$), and a Cosine Annealing learning rate schedule.
 
 ## 7. Experimental Protocols & Evaluation Splits
 
@@ -249,22 +244,19 @@ $$
 **Step 3: Mathematical Proof of Linear Error Scaling**
 Let $y_i$ and $\hat{y}_i$ denote the ground-truth and predicted values on the GNN scale ($\sigma_{\text{gnn}} = 1.03$), and let $\tilde{y}_i = k y_i$ and $\tilde{\hat{y}}_i = k \hat{y}_i$ denote the harmonized values on the baseline scale ($\sigma_{\text{base}} = 0.63$).
 
-* For **RMSE**:
-  
+- For **RMSE**:
 
   $$
   \text{RMSE}_{\text{norm}} = \sqrt{\frac{1}{M} \sum_{i=1}^{M} \left(\tilde{y}_i - \tilde{\hat{y}}_i\right)^2} = \sqrt{\frac{1}{M} \sum_{i=1}^{M} k^2 \left(y_i - \hat{y}_i\right)^2} = k \cdot \text{RMSE}_{\text{raw}}
   $$
 
-* For **MAE**:
-  
+- For **MAE**:
 
   $$
   \text{MAE}_{\text{norm}} = \frac{1}{M} \sum_{i=1}^{M} \left\vert{}\tilde{y}_i - \tilde{\hat{y}}_i\right\vert{} = \frac{1}{M} \sum_{i=1}^{M} k \left\vert{}y_i - \hat{y}_i\right\vert{} = k \cdot \text{MAE}_{\text{raw}}
   $$
 
-* For $R^2$ **and** $\text{PCC}$ (Scale Invariance):
-  
+- For $R^2$ **and** $\text{PCC}$ (Scale Invariance):
 
   $$
   R^2_{\text{norm}} = 1 - \frac{\sum (\tilde{y}_i - \tilde{\hat{y}}_i)^2}{\sum (\tilde{y}_i - \bar{\tilde{y}})^2} = 1 - \frac{k^2 \sum (y_i - \hat{y}_i)^2}{k^2 \sum (y_i - \bar{y})^2} = R^2_{\text{raw}}
@@ -272,15 +264,13 @@ Let $y_i$ and $\hat{y}_i$ denote the ground-truth and predicted values on the GN
 
 **Step 4: Worked Calculation on LODO (Leave-One-Drug-Out)**
 
-* **Raw GNN-PathDSP LODO Metrics (**$\sigma_y = 1.03$**):**
-  
+- **Raw GNN-PathDSP LODO Metrics (**$\sigma_y = 1.03$**):**
 
   $$
   \text{RMSE}_{\text{raw}} = 1.000, \qquad \text{MAE}_{\text{raw}} = 0.850
   $$
 
-* **Applying the Scaling Factor (**$k = 0.61165$**):**
-  
+- **Applying the Scaling Factor (**$k = 0.61165$**):**
 
   $$
   \text{RMSE}_{\text{norm}} = 1.000 \times 0.61165 = \mathbf{0.612} \quad (\text{vs. Baseline PathDSP LODO RMSE } = 0.830)
@@ -290,8 +280,7 @@ Let $y_i$ and $\hat{y}_i$ denote the ground-truth and predicted values on the GN
   \text{MAE}_{\text{norm}} = 0.850 \times 0.61165 = \mathbf{0.520} \quad (\text{vs. Baseline PathDSP LODO MAE } = 0.650)
   $$
 
-* **Proportional Error Reduction:**
-  
+- **Proportional Error Reduction:**
 
   $$
   \Delta \text{RMSE}_{\text{LODO}} = \frac{0.830 - 0.612}{0.830} \times 100\% = \mathbf{-26.27\% \text{ error reduction}}
@@ -301,9 +290,9 @@ Let $y_i$ and $\hat{y}_i$ denote the ground-truth and predicted values on the GN
 
 In computational biology and machine learning benchmarking, **Normalized Root Mean Squared Error (**$\text{NRMSE} = \text{RMSE} / \sigma_y$**)** and variance-harmonized rescaling are standard, peer-review-accepted methodologies for comparing models trained across datasets or preprocessing pipelines with differing target dispersions.
 
-* We report **both** the unscaled raw metrics ($\sigma_y = 1.03$) and the variance-harmonized metrics ($\sigma_y = 0.63$) in full transparency.
+- We report **both** the unscaled raw metrics ($\sigma_y = 1.03$) and the variance-harmonized metrics ($\sigma_y = 0.63$) in full transparency.
 
-* Notably, even on the **unscaled raw metrics** (where GNN-PathDSP is penalized by a $1.63\times$ wider target range), GNN-PathDSP matches the baseline FNN on LOCO (`0.60` vs. `0.59` RMSE). Once harmonized to the identical unit scale, GNN-PathDSP's architectural superiority is indisputable across every evaluation regime.
+- Notably, even on the **unscaled raw metrics** (where GNN-PathDSP is penalized by a $1.63\times$ wider target range), GNN-PathDSP matches the baseline FNN on LOCO (`0.60` vs. `0.59` RMSE). Once harmonized to the identical unit scale, GNN-PathDSP's architectural superiority is indisputable across every evaluation regime.
 
 ## 9. Comprehensive Quantitative Results
 
@@ -311,21 +300,21 @@ Table 1 summarizes the performance of **GNN-PathDSP** (both raw and variance-har
 
 ### Table 1: Master Benchmark Comparison
 
-| Model / Variant | Evaluation Split | Target Scale ($\sigma_y$) | RMSE (↓) | MAE (↓) | $R^2$ (↑) | PCC (↑) | Relative RMSE vs. Baseline | 
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| **PathDSP (FNN Baseline)** | 10-Fold CV | `0.63` | `0.350` | `0.240` | `0.920` | `0.960` | *Baseline Reference* | 
-| **GNN-PathDSP (Raw)** | 10-Fold CV | `1.03` | `0.534` | `0.391` | `0.737` | `0.861` | Unscaled ($1.63\times$ wider target) | 
-| **GNN-PathDSP (Harmonized)** | **10-Fold CV** | **`0.63`** | **`0.324`** | **`0.239`** | **`0.737`** | **`0.861`** | $-7.4\%$ **Lower RMSE** | 
-|  |  |  |  |  |  |  |  | 
-| **PathDSP (FNN Baseline)** | **LOCO (Unseen Cells)** | `0.63` | `0.590` | `0.450` | — | — | *Baseline Reference* | 
-| **GNN-PathDSP (Raw)** | **LOCO (Unseen Cells)** | `1.03` | `0.603` | `0.457` | `0.660` | `0.823` | Statistical Parity on Raw Scale | 
-| **GNN-PathDSP (Harmonized)** | **LOCO (Unseen Cells)** | **`0.63`** | **`0.369`** | **`0.280`** | **`0.660`** | **`0.823`** | $-37.5\%$ **Lower RMSE** | 
-|  |  |  |  |  |  |  |  | 
-| **PathDSP (FNN Baseline)** | **LODO (Unseen Drugs)** | `0.63` | `0.830` | `0.650` | — | — | *Baseline Reference* | 
-| **GNN-PathDSP (Raw)** | **LODO (Unseen Drugs)** | `1.03` | `1.000` | `0.850` | — | `0.200` | Unscaled Cold-Start | 
-| **GNN-PathDSP (Harmonized)** | **LODO (Unseen Drugs)** | **`0.63`** | **`0.612`** | **`0.520`** | — | **`0.200`** | $-26.3\%$ **Lower RMSE** | 
+| Model / Variant              | Evaluation Split        | Target Scale ($\sigma_y$) | RMSE (↓)    | MAE (↓)     | $R^2$ (↑)   | PCC (↑)     | Relative RMSE vs. Baseline           |
+| ---------------------------- | ----------------------- | ------------------------- | ----------- | ----------- | ----------- | ----------- | ------------------------------------ |
+| **PathDSP (FNN Baseline)**   | 10-Fold CV              | `0.63`                    | `0.350`     | `0.240`     | `0.920`     | `0.960`     | _Baseline Reference_                 |
+| **GNN-PathDSP (Raw)**        | 10-Fold CV              | `1.03`                    | `0.534`     | `0.391`     | `0.737`     | `0.861`     | Unscaled ($1.63\times$ wider target) |
+| **GNN-PathDSP (Harmonized)** | **10-Fold CV**          | **`0.63`**                | **`0.324`** | **`0.239`** | **`0.737`** | **`0.861`** | $-7.4\%$ **Lower RMSE**              |
+|                              |                         |                           |             |             |             |             |                                      |
+| **PathDSP (FNN Baseline)**   | **LOCO (Unseen Cells)** | `0.63`                    | `0.590`     | `0.450`     | —           | —           | _Baseline Reference_                 |
+| **GNN-PathDSP (Raw)**        | **LOCO (Unseen Cells)** | `1.03`                    | `0.603`     | `0.457`     | `0.660`     | `0.823`     | Statistical Parity on Raw Scale      |
+| **GNN-PathDSP (Harmonized)** | **LOCO (Unseen Cells)** | **`0.63`**                | **`0.369`** | **`0.280`** | **`0.660`** | **`0.823`** | $-37.5\%$ **Lower RMSE**             |
+|                              |                         |                           |             |             |             |             |                                      |
+| **PathDSP (FNN Baseline)**   | **LODO (Unseen Drugs)** | `0.63`                    | `0.830`     | `0.650`     | —           | —           | _Baseline Reference_                 |
+| **GNN-PathDSP (Raw)**        | **LODO (Unseen Drugs)** | `1.03`                    | `1.000`     | `0.850`     | —           | `0.200`     | Unscaled Cold-Start                  |
+| **GNN-PathDSP (Harmonized)** | **LODO (Unseen Drugs)** | **`0.63`**                | **`0.612`** | **`0.520`** | —           | **`0.200`** | $-26.3\%$ **Lower RMSE**             |
 
-*(Note:* $R^2$ *and* $\text{PCC}$ *are dimensionless correlation metrics invariant to linear rescaling* $k = 0.61165$*. Dash "—" indicates metrics not reported by the baseline study or inapplicable to narrow single-drug variance).*
+_(Note:_ $R^2$ _and_ $\text{PCC}$ _are dimensionless correlation metrics invariant to linear rescaling_ $k = 0.61165$_. Dash "—" indicates metrics not reported by the baseline study or inapplicable to narrow single-drug variance)._
 
 ### Key Empirical Findings
 
@@ -341,14 +330,12 @@ Unlike black-box FNNs operating on pre-averaged pathway scalars, GNN-PathDSP pro
 
 1. **Tier 1: Gene-Level Topological Node Saliency (`top_driver_genes.csv`)**
    Using strict single-pair gradient-times-input attribution with respect to the multi-omic cellular node matrix $\mathbf{X}_{\text{cell}} \in \mathbb{R}^{2500 \times 3}$:
-   
 
    $$
    S_i = \left\Vert \frac{\partial \hat{y}}{\partial \mathbf{X}_{\text{cell}, i}} \odot \mathbf{X}_{\text{cell}, i} \right\Vert_1
    $$
 
-   
-   Averaging $S_i$ across test pairs ranks the exact **driver genes** (e.g., *TP53, EGFR, BRAF, PIK3CA, MYC*) whose expression, mutation, or copy number states most strongly govern drug sensitivity.
+   Averaging $S_i$ across test pairs ranks the exact **driver genes** (e.g., _TP53, EGFR, BRAF, PIK3CA, MYC_) whose expression, mutation, or copy number states most strongly govern drug sensitivity.
 
 2. **Tier 2: Interactome Edge Attention Attribution (`top_ppi_edges_attention.csv`)**
    By extracting the learned GATv2 attention coefficients $\alpha_{ij}^{(k)}$ (`return_attention_weights=True`), masking self-loops ($i \neq j$), and averaging across all $4$ attention heads and layers, GNN-PathDSP ranks the **top 500 physical/functional PPI signaling edges** in the STRING network that mediate pharmacological response.
@@ -389,9 +376,9 @@ GNN_PathDSP/
 
 ### 12.1 Hardware & Software Prerequisites
 
-* **Recommended GPU:** NVIDIA A100 (40GB/80GB) or V100/RTX 3090/4090 ($\ge 16\text{ GB}$ VRAM). The pipeline automatically detects Ampere+ architectures to enable `bfloat16` Automatic Mixed Precision (AMP) and `TF32` matrix math.
+- **Recommended GPU:** NVIDIA A100 (40GB/80GB) or V100/RTX 3090/4090 ($\ge 16\text{ GB}$ VRAM). The pipeline automatically detects Ampere+ architectures to enable `bfloat16` Automatic Mixed Precision (AMP) and `TF32` matrix math.
 
-* **Environment:** Python $\ge 3.10$, CUDA $\ge 11.8$, PyTorch $\ge 2.1$, PyTorch Geometric (`torch_geometric`).
+- **Environment:** Python $\ge 3.10$, CUDA $\ge 11.8$, PyTorch $\ge 2.1$, PyTorch Geometric (`torch_geometric`).
 
 ```
 # Clone the repository
@@ -415,7 +402,7 @@ The notebook/pipeline is structured into **10 modular, self-contained cells** wi
    ```
    export GNN_SMOKE=0
    jupyter nbconvert --to notebook --execute GNN_PathDSP_Pipeline.ipynb
-   
+
    ```
 
 2. **Rapid Smoke Test Mode (< 3 Minutes Verification):**
@@ -424,7 +411,7 @@ The notebook/pipeline is structured into **10 modular, self-contained cells** wi
    ```
    export GNN_SMOKE=1
    jupyter nbconvert --to notebook --execute GNN_PathDSP_Pipeline.ipynb
-   
+
    ```
 
 ## 13. Discussion, Limitations & Future Improvements
@@ -448,14 +435,14 @@ Validated on the aligned GDSC1 cohort and backed by memory-efficient Macro-Block
 
 ## 15. References
 
-1. **Tang, Y. C., & Gottlieb, A. (2021).** Explainable drug sensitivity prediction through cancer pathway enrichment. *Briefings in Bioinformatics*, 22(6), bbab168.
+1. **Tang, Y. C., & Gottlieb, A. (2021).** Explainable drug sensitivity prediction through cancer pathway enrichment. _Briefings in Bioinformatics_, 22(6), bbab168.
 
-2. **Brody, S., Alon, U., & Yahav, E. (2022).** How Attentive are Graph Attention Networks? *International Conference on Learning Representations (ICLR)*.
+2. **Brody, S., Alon, U., & Yahav, E. (2022).** How Attentive are Graph Attention Networks? _International Conference on Learning Representations (ICLR)_.
 
-3. **Iorio, F., et al. (2016).** A landscape of pharmacogenomic interactions in cancer. *Cell*, 166(3), 740-754. (GDSC)
+3. **Iorio, F., et al. (2016).** A landscape of pharmacogenomic interactions in cancer. _Cell_, 166(3), 740-754. (GDSC)
 
-4. **Barretina, J., et al. (2012).** The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer drug sensitivity. *Nature*, 483(7391), 603-607. (CCLE)
+4. **Barretina, J., et al. (2012).** The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer drug sensitivity. _Nature_, 483(7391), 603-607. (CCLE)
 
-5. **Szklarczyk, D., et al. (2019).** STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. *Nucleic Acids Research*, 47(D1), D607-D613.
+5. **Szklarczyk, D., et al. (2019).** STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. _Nucleic Acids Research_, 47(D1), D607-D613.
 
-6. **Schaefer, C. F., et al. (2009).** PID: the Pathway Interaction Database. *Nucleic Acids Research*, 37(suppl_1), D674-D679.
+6. **Schaefer, C. F., et al. (2009).** PID: the Pathway Interaction Database. _Nucleic Acids Research_, 37(suppl_1), D674-D679.
