@@ -1,0 +1,23 @@
+[theme]
+base = "dark"
+primaryColor = "#D71921"
+backgroundColor = "#000000"
+secondaryBackgroundColor = "#0F0F0F"
+textColor = "#F2F2F2"
+redColor = "#D71921"
+font = "'Space Grotesk':https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+headingFont = "Doto:https://fonts.googleapis.com/css2?family=Doto:wght@600;800;900&display=swap"
+codeFont = "'Space Mono':https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+baseRadius = "14px"
+buttonRadius = "full"
+showWidgetBorder = true
+
+[client]
+toolbarMode = "minimal"
+
+[runner]
+magicEnabled = false
+
+[server]
+fileWatcherType = "none"
+maxUploadSize = 4096          # MB — dataset uploads on the Train page

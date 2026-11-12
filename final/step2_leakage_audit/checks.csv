@@ -1,0 +1,8 @@
+check,how it was verified,result,detail
+Train / inner-validation / test rows are disjoint in every fold,fold jobs rebuilt from config.json (core.engine.make_jobs),PASS,10 folds; inner validation ⊂ training rows; test ∩ training = ∅
+Every test prediction comes from a model that never saw that pair,preds.csv vs the rebuilt test folds,PASS,"duplicates 0; each mixed repeat covers all 37,732 pairs once: True"
+Feature z-scoring is fitted on the fold's training rows only,mean / sd stored with the best fold vs recomputed,PASS,max |μ − μ(train rows)| = 6.1e-08; max |μ − μ(all rows)| = 4.9e-03
+Drug-wise z target uses each drug's training responses only,stored drug means / sds vs recomputed,PASS,max |μ − μ(train rows)| = 0.0e+00; vs all rows 1.3e-01
+Conformal interval of a fold is calibrated on the other folds only,fold 1's predictions shifted by +5; its interval widths recomputed,PASS,widths unchanged
+"Early stopping and the best epoch use the inner validation rows, never the test rows","code: engine.Pool scores job.va; test rows are predicted once, after training (runner._fold_done); demo L4 shows what test-based stopping would do",PASS,by construction
+Response labels are not used to build features,the authors' ssGSEA / NetPEA scores and Morgan bits are computed per cell line / per drug without any drug response,PASS,"label-free (computed once for all cell lines: transductive, but no labels)"

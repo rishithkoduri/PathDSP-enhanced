@@ -1,0 +1,59 @@
+{
+ "checks_passed": 7,
+ "checks": 7,
+ "all_pass": true,
+ "demos": [
+  {
+   "leak": "L1 \u00b7 z-scoring fitted on all rows (incl. test)",
+   "model": "Ridge (\u03b1 = 10)",
+   "RMSE clean": 0.5079533948183723,
+   "RMSE leaky": 0.507953399457298,
+   "\u0394 (leaky \u2212 clean)": 4.638925593658527e-09,
+   "relative": 9.132581140278147e-09,
+   "folds leaky looks better": 3,
+   "folds": 10,
+   "Wilcoxon p": 0.625,
+   "note": "our runs fit it per fold"
+  },
+  {
+   "leak": "L2 \u00b7 top-200 features chosen on all rows",
+   "model": "Ridge (\u03b1 = 10)",
+   "RMSE clean": 0.6476120808866177,
+   "RMSE leaky": 0.6478567242191746,
+   "\u0394 (leaky \u2212 clean)": 0.00024464333255673764,
+   "relative": 0.00037776215079528324,
+   "folds leaky looks better": 4,
+   "folds": 10,
+   "Wilcoxon p": 1.0,
+   "note": "our runs select no features"
+  },
+  {
+   "leak": "L3 \u00b7 drug means / sds of the z target from all rows",
+   "model": "Ridge (\u03b1 = 10)",
+   "RMSE clean": 0.5000409409667029,
+   "RMSE leaky": 0.4990704332340525,
+   "\u0394 (leaky \u2212 clean)": -0.0009705077326506107,
+   "relative": -0.0019408565442149176,
+   "folds leaky looks better": 10,
+   "folds": 10,
+   "Wilcoxon p": 0.001953125,
+   "note": "our runs use training rows only"
+  },
+  {
+   "leak": "L4 \u00b7 early stopping / best round chosen on the test fold",
+   "model": "LightGBM (app defaults, drug-wise z)",
+   "RMSE clean": 0.43715935850682974,
+   "RMSE leaky": 0.43697278866031786,
+   "\u0394 (leaky \u2212 clean)": -0.00018656984651196362,
+   "relative": -0.0004267776564345215,
+   "folds leaky looks better": 7,
+   "folds": 10,
+   "Wilcoxon p": 0.4921875,
+   "note": "best round 1572 (clean) vs 1599 (test-stopped), median"
+  }
+ ],
+ "selection_leak_step1": {
+  "confirmed": true,
+  "mean_dRMSE": -0.018691626356180185
+ }
+}

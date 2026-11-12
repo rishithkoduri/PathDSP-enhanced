@@ -1,0 +1,21 @@
+{
+ "decided": "2026-11-10 01:31:47",
+ "rule": "Step 1: the recipe must beat plain Paper exact on fresh folds on \u2265 8 of 10 folds with Wilcoxon p < 0.05. If it does, the final IC50 model uses it; otherwise plain Paper exact.",
+ "step1_confirmed": true,
+ "final_ic50": {
+  "label": "Paper exact + C\u00b7D\u00d73\u00b7E\u00b7F\u00b7G\u00b7Z",
+  "recipe": "recipe",
+  "data": "processed",
+  "why_data": "processed_data \u00b7 GDSC: all 153 drugs (40,365 pairs, a superset of input.txt's 37,732), and the paper's CCLE external test runs on it"
+ },
+ "final_aac": [
+  {
+   "label": "Run A recipe \u2014 multi-study, raw AAC",
+   "use": "absolute AAC for a study with no measured pairs"
+  },
+  {
+   "label": "Run B recipe \u2014 S + R + M",
+   "use": "ranking cell lines within a drug; recalibrate with ~100 measured pairs"
+  }
+ ]
+}

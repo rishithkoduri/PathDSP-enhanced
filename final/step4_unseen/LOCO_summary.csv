@@ -1,0 +1,5 @@
+Model,RMSE (paper style),RMSE pooled,MAE,R²,PCC,Per-drug PCC,Within-drug AUROC
+Paper exact (plain),0.5852 ± 0.1724,0.6087,0.4510,0.744,0.869,0.380,0.702
+Paper exact + recipe,0.5612 ± 0.1661,0.5841,0.4353,0.765,0.876,0.431,0.720
+Baseline: drug's mean over training cell lines,0.6299 ± 0.1991,0.6573,0.4989,0.702,0.838,n/a,n/a
+Baseline: global training mean,1.1986 ± 0.1369,1.2043,0.9230,-7.7e-04,n/a,n/a,n/a

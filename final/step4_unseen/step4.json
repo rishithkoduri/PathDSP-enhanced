@@ -1,0 +1,154 @@
+{
+ "LOCO": {
+  "comparison": {
+   "scheme": "LOCO",
+   "A": "Paper exact (plain)",
+   "B": "Paper exact + recipe",
+   "run_A": "20261109-203618_PAPER_input_4-plain",
+   "run_B": "20261109-221456_PAPER_input_4-recipe-LOCO",
+   "n": 10,
+   "mean_dRMSE": -0.02431739795333343,
+   "sd_dRMSE": 0.010097457120028975,
+   "B_better": 10,
+   "A_better": 0,
+   "ties": 0,
+   "p_sign": 0.001953125,
+   "p_wilcoxon": 0.001953125,
+   "p_t": 3.2731780449911954e-05
+  },
+  "summary": [
+   {
+    "Model": "Paper exact (plain)",
+    "RMSE (paper style)": "0.5852 \u00b1 0.1724",
+    "RMSE pooled": "0.6087",
+    "MAE": "0.4510",
+    "R\u00b2": "0.744",
+    "PCC": "0.869",
+    "Per-drug PCC": "0.380",
+    "Within-drug AUROC": "0.702"
+   },
+   {
+    "Model": "Paper exact + recipe",
+    "RMSE (paper style)": "0.5612 \u00b1 0.1661",
+    "RMSE pooled": "0.5841",
+    "MAE": "0.4353",
+    "R\u00b2": "0.765",
+    "PCC": "0.876",
+    "Per-drug PCC": "0.431",
+    "Within-drug AUROC": "0.720"
+   },
+   {
+    "Model": "Baseline: drug's mean over training cell lines",
+    "RMSE (paper style)": "0.6299 \u00b1 0.1991",
+    "RMSE pooled": "0.6573",
+    "MAE": "0.4989",
+    "R\u00b2": "0.702",
+    "PCC": "0.838",
+    "Per-drug PCC": "n/a",
+    "Within-drug AUROC": "n/a"
+   },
+   {
+    "Model": "Baseline: global training mean",
+    "RMSE (paper style)": "1.1986 \u00b1 0.1369",
+    "RMSE pooled": "1.2043",
+    "MAE": "0.9230",
+    "R\u00b2": "-7.7e-04",
+    "PCC": "n/a",
+    "Per-drug PCC": "n/a",
+    "Within-drug AUROC": "n/a"
+   }
+  ],
+  "vs_baseline": {
+   "Paper exact (plain)": {
+    "groups": 319,
+    "model_better": 185,
+    "baseline_better": 134,
+    "mean_d": -0.04469402718433805,
+    "p_wilcoxon": 1.397244828020484e-05
+   },
+   "Paper exact + recipe": {
+    "groups": 319,
+    "model_better": 202,
+    "baseline_better": 117,
+    "mean_d": -0.0686997741467314,
+    "p_wilcoxon": 1.4004708154783239e-11
+   }
+  }
+ },
+ "LODO": {
+  "comparison": {
+   "scheme": "LODO",
+   "A": "Paper exact (plain)",
+   "B": "Paper exact + recipe",
+   "run_A": "20261109-203618_PAPER_input_4-plain",
+   "run_B": "20261109-235843_PAPER_input_4-recipe-LODO",
+   "n": 10,
+   "mean_dRMSE": 0.010983509093176492,
+   "sd_dRMSE": 0.04031482141869888,
+   "B_better": 3,
+   "A_better": 7,
+   "ties": 0,
+   "p_sign": 0.34375,
+   "p_wilcoxon": 0.4921875,
+   "p_t": 0.4113053761553759
+  },
+  "summary": [
+   {
+    "Model": "Paper exact (plain)",
+    "RMSE (paper style)": "0.9822 \u00b1 0.5637",
+    "RMSE pooled": "1.1436",
+    "MAE": "0.8608",
+    "R\u00b2": "0.097",
+    "PCC": "0.460",
+    "Per-drug PCC": "0.629",
+    "Within-drug AUROC": "0.796"
+   },
+   {
+    "Model": "Paper exact + recipe",
+    "RMSE (paper style)": "0.9867 \u00b1 0.5849",
+    "RMSE pooled": "1.1600",
+    "MAE": "0.8785",
+    "R\u00b2": "0.071",
+    "PCC": "0.421",
+    "Per-drug PCC": "0.641",
+    "Within-drug AUROC": "0.804"
+   },
+   {
+    "Model": "Baseline: cell line's mean over training drugs",
+    "RMSE (paper style)": "0.9502 \u00b1 0.5937",
+    "RMSE pooled": "1.1354",
+    "MAE": "0.8693",
+    "R\u00b2": "0.110",
+    "PCC": "0.333",
+    "Per-drug PCC": "0.655",
+    "Within-drug AUROC": "0.812"
+   },
+   {
+    "Model": "Baseline: global training mean",
+    "RMSE (paper style)": "1.0525 \u00b1 0.5733",
+    "RMSE pooled": "1.2119",
+    "MAE": "0.9290",
+    "R\u00b2": "-0.013",
+    "PCC": "n/a",
+    "Per-drug PCC": "n/a",
+    "Within-drug AUROC": "n/a"
+   }
+  ],
+  "vs_baseline": {
+   "Paper exact (plain)": {
+    "groups": 144,
+    "model_better": 62,
+    "baseline_better": 82,
+    "mean_d": 0.03194403146062373,
+    "p_wilcoxon": 0.09746551104393689
+   },
+   "Paper exact + recipe": {
+    "groups": 144,
+    "model_better": 66,
+    "baseline_better": 78,
+    "mean_d": 0.03650201122732972,
+    "p_wilcoxon": 0.1573731084180361
+   }
+  }
+ }
+}

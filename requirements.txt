@@ -1,0 +1,12 @@
+# PathDSP-X app — PyTorch (CUDA) is installed by start.bat (tools/setup_env.py), not from this file:
+# (manual: pip install torch --index-url https://download.pytorch.org/whl/cu128 --extra-index-url https://pypi.org/simple)
+streamlit>=1.50
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+scipy>=1.11
+altair>=5.4
+shap>=0.46
+psutil>=5.9
+nvidia-ml-py>=12.535
+lightgbm>=4.0

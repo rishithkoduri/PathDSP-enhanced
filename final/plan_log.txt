@@ -1,0 +1,1118 @@
+[17:53:25] GPU: NVIDIA GeForce RTX 4060 Laptop GPU · PyTorch 2.14.1+cu130
+[17:53:25] Final validation plan started (python tools/final_plan.py --plan shows every step)
+[17:53:26] ▶ Step 1 · Paper exact, seed 43 (fresh folds) — new run 20261109-175325_PAPER_input_1-plain (no upgrades, schemes mixed; rough time ≈1–1.5 h)
+[17:53:26]   Step 1 · Paper exact, seed 43 (fresh folds): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[17:54:26]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 1 · elapsed 0h00m · about 0h50m left
+[17:55:26]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 5 · elapsed 0h01m · about 0h45m left
+[17:56:26]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 8 · elapsed 0h02m · about 0h40m left
+[17:57:26]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 11 · elapsed 0h03m · about 0h38m left
+[17:58:26]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 15 · elapsed 0h04m · about 0h36m left
+[17:59:26]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 18 · elapsed 0h05m · about 0h38m left
+[18:00:26]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 22 · elapsed 0h06m · about 0h34m left
+[18:01:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 26 · elapsed 0h07m · about 0h33m left
+[18:02:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 29 · elapsed 0h08m · about 0h32m left
+[18:03:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 33 · elapsed 0h09m · about 0h31m left
+[18:04:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 36 · elapsed 0h10m · about 0h30m left
+[18:05:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 40 · elapsed 0h11m · about 0h29m left
+[18:06:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 44 · elapsed 0h12m · about 0h27m left
+[18:07:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 47 · elapsed 0h13m · about 0h27m left
+[18:08:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 51 · elapsed 0h14m · about 0h25m left
+[18:09:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 55 · elapsed 0h15m · about 0h24m left
+[18:10:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 58 · elapsed 0h16m · about 0h23m left
+[18:11:27]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 62 · elapsed 0h17m · about 0h22m left
+[18:12:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 66 · elapsed 0h18m · about 0h23m left
+[18:13:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 69 · elapsed 0h19m · about 0h23m left
+[18:14:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 73 · elapsed 0h20m · about 0h21m left
+[18:15:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 76 · elapsed 0h21m · about 0h20m left
+[18:16:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 80 · elapsed 0h22m · about 0h19m left
+[18:17:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 84 · elapsed 0h23m · about 0h19m left
+[18:18:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 87 · elapsed 0h24m · about 0h18m left
+[18:19:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 91 · elapsed 0h25m · about 0h17m left
+[18:20:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 95 · elapsed 0h26m · about 0h16m left
+[18:21:28]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 0/10 · epoch 98 · elapsed 0h27m · about 0h15m left
+[18:22:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 1/10 · epoch 102 · elapsed 0h28m · about 0h13m left
+[18:23:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 1/10 · epoch 106 · elapsed 0h29m · about 0h13m left
+[18:24:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 1/10 · epoch 110 · elapsed 0h30m · about 0h12m left
+[18:25:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 1/10 · epoch 114 · elapsed 0h31m · about 0h12m left
+[18:26:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 1/10 · epoch 118 · elapsed 0h32m · about 0h11m left
+[18:27:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 1/10 · epoch 122 · elapsed 0h33m · about 0h10m left
+[18:28:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 3/10 · epoch 127 · elapsed 0h34m · about 0h06m left
+[18:29:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 3/10 · epoch 131 · elapsed 0h35m · about 0h07m left
+[18:30:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 7/10 · epoch 136 · elapsed 0h36m · about 0h06m left
+[18:31:29]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 7/10 · epoch 141 · elapsed 0h37m · about 0h07m left
+[18:32:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 7/10 · epoch 147 · elapsed 0h38m · about 0h06m left
+[18:33:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 8/10 · epoch 152 · elapsed 0h39m · about 0h07m left
+[18:34:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 8/10 · epoch 157 · elapsed 0h40m · about 0h06m left
+[18:35:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 8/10 · epoch 162 · elapsed 0h41m · about 0h05m left
+[18:36:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 8/10 · epoch 166 · elapsed 0h42m · about 0h05m left
+[18:37:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 170 · elapsed 0h43m · about 0h04m left
+[18:38:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 174 · elapsed 0h44m · about 0h03m left
+[18:39:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 179 · elapsed 0h45m · about 0h08m left
+[18:40:30]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 183 · elapsed 0h46m · about 0h08m left
+[18:41:31]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 187 · elapsed 0h47m · about 0h07m left
+[18:42:31]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 192 · elapsed 0h48m · about 0h06m left
+[18:43:31]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 196 · elapsed 0h50m · about 0h05m left
+[18:44:31]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 200 · elapsed 0h51m · about 0h04m left
+[18:45:31]   Step 1 · Paper exact, seed 43 (fresh folds): running · models 9/10 · epoch 205 · elapsed 0h52m · about 0h03m left
+[18:46:11]   Step 1 · Paper exact, seed 43 (fresh folds): finished · models 10/10 · epoch 206 · elapsed 0h52m · Finished
+[18:46:12] ✓ Step 1 · Paper exact, seed 43 (fresh folds) — finished (0h52m)
+[18:46:12] ▶ Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds) — new run 20261109-184612_PAPER_input_1-recipe (C·D×3·E·F·G·Z, schemes mixed; rough time ≈1.5–2 h)
+[18:46:12]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[18:47:12]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch – · elapsed 0h00m
+[18:48:12]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 1 · elapsed 0h01m · about 1h06m left
+[18:49:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 2 · elapsed 0h02m · about 1h04m left
+[18:50:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 3 · elapsed 0h03m · about 1h03m left
+[18:51:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 4 · elapsed 0h04m · about 1h02m left
+[18:52:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 5 · elapsed 0h05m · about 1h01m left
+[18:53:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 6 · elapsed 0h06m · about 1h00m left
+[18:54:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 7 · elapsed 0h07m · about 0h59m left
+[18:55:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 8 · elapsed 0h08m · about 0h58m left
+[18:56:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 9 · elapsed 0h09m · about 0h57m left
+[18:57:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 10 · elapsed 0h10m · about 0h56m left
+[18:58:13]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 11 · elapsed 0h11m · about 0h55m left
+[18:59:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 12 · elapsed 0h12m · about 0h54m left
+[19:00:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 13 · elapsed 0h13m · about 0h53m left
+[19:01:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 14 · elapsed 0h14m · about 0h52m left
+[19:02:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 15 · elapsed 0h15m · about 0h51m left
+[19:03:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 16 · elapsed 0h16m · about 0h50m left
+[19:04:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 17 · elapsed 0h17m · about 0h49m left
+[19:05:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 18 · elapsed 0h18m · about 0h48m left
+[19:06:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 19 · elapsed 0h19m · about 0h47m left
+[19:07:14]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 20 · elapsed 0h20m · about 0h46m left
+[19:08:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 21 · elapsed 0h21m · about 0h45m left
+[19:09:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 22 · elapsed 0h22m · about 0h44m left
+[19:10:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 23 · elapsed 0h23m · about 0h43m left
+[19:11:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 24 · elapsed 0h24m · about 0h42m left
+[19:12:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 25 · elapsed 0h25m · about 0h41m left
+[19:13:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 26 · elapsed 0h26m · about 0h40m left
+[19:14:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 27 · elapsed 0h27m · about 0h39m left
+[19:15:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 28 · elapsed 0h28m · about 0h38m left
+[19:16:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 29 · elapsed 0h29m · about 0h37m left
+[19:17:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 30 · elapsed 0h30m · about 0h36m left
+[19:18:15]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 31 · elapsed 0h31m · about 0h35m left
+[19:19:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 32 · elapsed 0h32m · about 0h34m left
+[19:20:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 33 · elapsed 0h33m · about 0h33m left
+[19:21:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 34 · elapsed 0h34m · about 0h32m left
+[19:22:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 35 · elapsed 0h35m · about 0h31m left
+[19:23:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 36 · elapsed 0h36m · about 0h30m left
+[19:24:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 37 · elapsed 0h37m · about 0h29m left
+[19:25:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 38 · elapsed 0h38m · about 0h29m left
+[19:26:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 39 · elapsed 0h39m · about 0h28m left
+[19:27:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 40 · elapsed 0h40m · about 0h27m left
+[19:28:16]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 41 · elapsed 0h41m · about 0h27m left
+[19:29:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 42 · elapsed 0h42m · about 0h26m left
+[19:30:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 43 · elapsed 0h43m · about 0h26m left
+[19:31:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 0/30 · epoch 44 · elapsed 0h44m · about 0h25m left
+[19:32:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 1/30 · epoch 45 · elapsed 0h45m · about 0h24m left
+[19:33:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 1/30 · epoch 46 · elapsed 0h46m · about 0h24m left
+[19:34:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 2/30 · epoch 47 · elapsed 0h47m · about 0h23m left
+[19:35:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 6/30 · epoch 49 · elapsed 0h48m · about 0h27m left
+[19:36:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 7/30 · epoch 50 · elapsed 0h49m · about 0h26m left
+[19:37:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 7/30 · epoch 51 · elapsed 0h50m · about 0h26m left
+[19:38:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 7/30 · epoch 52 · elapsed 0h52m · about 0h25m left
+[19:39:17]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 8/30 · epoch 54 · elapsed 0h52m · about 0h25m left
+[19:40:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 9/30 · epoch 55 · elapsed 0h54m · about 0h25m left
+[19:41:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 9/30 · epoch 57 · elapsed 0h54m · about 0h25m left
+[19:42:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 10/30 · epoch 58 · elapsed 0h56m · about 0h23m left
+[19:43:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 11/30 · epoch 59 · elapsed 0h57m · about 0h22m left
+[19:44:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 11/30 · epoch 61 · elapsed 0h58m · about 0h21m left
+[19:45:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 14/30 · epoch 63 · elapsed 0h59m · about 0h19m left
+[19:46:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 14/30 · epoch 65 · elapsed 1h00m · about 0h19m left
+[19:47:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 14/30 · epoch 66 · elapsed 1h01m · about 0h18m left
+[19:48:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 16/30 · epoch 68 · elapsed 1h02m · about 0h17m left
+[19:49:18]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 17/30 · epoch 70 · elapsed 1h03m · about 0h17m left
+[19:50:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 17/30 · epoch 73 · elapsed 1h04m · about 0h16m left
+[19:51:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 17/30 · epoch 75 · elapsed 1h05m · about 0h15m left
+[19:52:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 17/30 · epoch 77 · elapsed 1h06m · about 0h15m left
+[19:53:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 18/30 · epoch 80 · elapsed 1h07m · about 0h14m left
+[19:54:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 18/30 · epoch 82 · elapsed 1h08m · about 0h13m left
+[19:55:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 18/30 · epoch 84 · elapsed 1h09m · about 0h14m left
+[19:56:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 19/30 · epoch 87 · elapsed 1h10m · about 0h14m left
+[19:57:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 19/30 · epoch 89 · elapsed 1h11m · about 0h13m left
+[19:58:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 19/30 · epoch 92 · elapsed 1h12m · about 0h13m left
+[19:59:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 19/30 · epoch 95 · elapsed 1h13m · about 0h13m left
+[20:00:19]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 19/30 · epoch 97 · elapsed 1h14m · about 0h13m left
+[20:01:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 21/30 · epoch 100 · elapsed 1h15m · about 0h12m left
+[20:02:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 21/30 · epoch 103 · elapsed 1h16m · about 0h12m left
+[20:03:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 21/30 · epoch 106 · elapsed 1h17m · about 0h11m left
+[20:04:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 21/30 · epoch 109 · elapsed 1h18m · about 0h10m left
+[20:05:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 21/30 · epoch 113 · elapsed 1h19m · about 0h10m left
+[20:06:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 22/30 · epoch 116 · elapsed 1h20m · about 0h09m left
+[20:07:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 24/30 · epoch 120 · elapsed 1h21m · about 0h07m left
+[20:08:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 25/30 · epoch 124 · elapsed 1h22m · about 0h05m left
+[20:09:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 26/30 · epoch 128 · elapsed 1h23m · about 0h05m left
+[20:10:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 27/30 · epoch 132 · elapsed 1h24m · about 0h05m left
+[20:11:20]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 28/30 · epoch 136 · elapsed 1h25m · about 0h04m left
+[20:12:21]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 28/30 · epoch 140 · elapsed 1h26m · about 0h04m left
+[20:13:21]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 28/30 · epoch 144 · elapsed 1h27m · about 0h04m left
+[20:14:21]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 29/30 · epoch 148 · elapsed 1h28m · about 0h03m left
+[20:15:21]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 29/30 · epoch 152 · elapsed 1h29m · about 0h03m left
+[20:16:21]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): running · models 29/30 · epoch 155 · elapsed 1h30m · about 0h02m left
+[20:16:41]   Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds): finished · models 30/30 · epoch 156 · elapsed 1h30m · Finished
+[20:16:42] ✓ Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds) — finished (1h30m)
+[20:16:42] ▶ step1 …
+[20:16:43]   recipe vs plain on fresh folds: ΔRMSE -0.0187, recipe better on 10/10 folds, Wilcoxon p = 0.002 → CONFIRMED
+[20:16:43] ✓ step1 — done in 0h00m
+[20:16:43] ▶ step2 …
+[20:16:43] Leakage audit: checks on the files of 20261109-184612_PAPER_input_1-recipe
+[20:16:44] Leakage audit: leak demonstrations (CPU)
+[20:16:44] L1 · feature scaling fitted on all rows
+[20:17:10]   L1 · z-scoring fitted on all rows (incl. test): clean 0.5080 vs leaky 0.5080
+[20:17:10] L2 · feature selection on all rows
+[20:17:36]   L2 · top-200 features chosen on all rows: clean 0.6476 vs leaky 0.6479
+[20:17:36] L3 · drug-wise z statistics from all rows
+[20:18:00]   L3 · drug means / sds of the z target from all rows: clean 0.5000 vs leaky 0.4991
+[20:18:00] L4 · early stopping on the test fold (LightGBM, about 30 min on 8 cores)
+[20:19:13] LightGBM clean fold 1/10: RMSE 0.4484, best round 2294
+[20:20:05] LightGBM clean fold 2/10: RMSE 0.4389, best round 1609
+[20:20:57] LightGBM clean fold 3/10: RMSE 0.4317, best round 1600
+[20:21:43] LightGBM clean fold 4/10: RMSE 0.4407, best round 1348
+[20:22:31] LightGBM clean fold 5/10: RMSE 0.4298, best round 1451
+[20:23:26] LightGBM clean fold 6/10: RMSE 0.4387, best round 1676
+[20:24:18] LightGBM clean fold 7/10: RMSE 0.4447, best round 1544
+[20:25:20] LightGBM clean fold 8/10: RMSE 0.4336, best round 1827
+[20:25:57] LightGBM clean fold 9/10: RMSE 0.4370, best round 1097
+[20:26:47] LightGBM clean fold 10/10: RMSE 0.4280, best round 1501
+[20:27:31] LightGBM test-stopped fold 1/10: RMSE 0.4501, best round 1239
+[20:28:23] LightGBM test-stopped fold 2/10: RMSE 0.4388, best round 1583
+[20:29:11] LightGBM test-stopped fold 3/10: RMSE 0.4317, best round 1615
+[20:30:01] LightGBM test-stopped fold 4/10: RMSE 0.4395, best round 1771
+[20:31:09] LightGBM test-stopped fold 5/10: RMSE 0.4268, best round 2498
+[20:31:55] LightGBM test-stopped fold 6/10: RMSE 0.4386, best round 1665
+[20:32:35] LightGBM test-stopped fold 7/10: RMSE 0.4448, best round 1377
+[20:33:06] LightGBM test-stopped fold 8/10: RMSE 0.4379, best round 996
+[20:33:44] LightGBM test-stopped fold 9/10: RMSE 0.4355, best round 1325
+[20:34:38] LightGBM test-stopped fold 10/10: RMSE 0.4260, best round 1903
+[20:34:38]   L4 · early stopping / best round chosen on the test fold: clean 0.4372 vs leaky 0.4370
+[20:34:38]   checks passed: 7/7
+[20:34:38] ✓ step2 — done in 0h17m
+[20:34:38] ▶ step3 …
+[20:34:40] SHAP seed 1/3 on 3,773 held-out pairs…
+[20:35:11] SHAP seed 2/3 on 3,773 held-out pairs…
+[20:35:39] SHAP seed 3/3 on 3,773 held-out pairs…
+[20:36:18]   target recovery: AUROC 0.499 (random 0.5), P@10 0.065 (random 0.103)
+[20:36:18] ✓ step3 — done in 0h01m
+[20:36:18] ▶ Step 4 · Paper exact, LOCO + LODO (grouped 10-fold) — new run 20261109-203618_PAPER_input_4-plain (no upgrades, schemes LOCO, LODO; rough time ≈2–3 h)
+[20:36:18]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[20:37:18]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 1 · elapsed 0h00m · about 1h12m left
+[20:38:18]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 3 · elapsed 0h01m · about 1h10m left
+[20:39:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 5 · elapsed 0h02m · about 1h09m left
+[20:40:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 7 · elapsed 0h03m · about 1h08m left
+[20:41:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 9 · elapsed 0h04m · about 1h07m left
+[20:42:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 10 · elapsed 0h05m · about 1h06m left
+[20:43:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 12 · elapsed 0h06m · about 1h05m left
+[20:44:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 14 · elapsed 0h07m · about 1h04m left
+[20:45:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 16 · elapsed 0h08m · about 1h03m left
+[20:46:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 18 · elapsed 0h09m · about 1h02m left
+[20:47:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 20 · elapsed 0h10m · about 1h01m left
+[20:48:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 22 · elapsed 0h11m · about 1h00m left
+[20:49:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 24 · elapsed 0h12m · about 0h59m left
+[20:50:19]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 26 · elapsed 0h13m · about 0h58m left
+[20:51:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 28 · elapsed 0h14m · about 0h57m left
+[20:52:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 29 · elapsed 0h15m · about 0h56m left
+[20:53:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 31 · elapsed 0h16m · about 0h55m left
+[20:54:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 33 · elapsed 0h17m · about 0h54m left
+[20:55:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 35 · elapsed 0h18m · about 0h53m left
+[20:56:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 37 · elapsed 0h19m · about 0h52m left
+[20:57:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 39 · elapsed 0h20m · about 0h51m left
+[20:58:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 41 · elapsed 0h21m · about 0h50m left
+[20:59:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 43 · elapsed 0h22m · about 0h49m left
+[21:00:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 45 · elapsed 0h23m · about 0h48m left
+[21:01:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 47 · elapsed 0h24m · about 0h47m left
+[21:02:20]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 49 · elapsed 0h25m · about 0h46m left
+[21:03:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 50 · elapsed 0h26m · about 0h45m left
+[21:04:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 52 · elapsed 0h27m · about 0h44m left
+[21:05:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 54 · elapsed 0h28m · about 0h43m left
+[21:06:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 56 · elapsed 0h29m · about 0h42m left
+[21:07:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 58 · elapsed 0h30m · about 0h41m left
+[21:08:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 60 · elapsed 0h31m · about 0h40m left
+[21:09:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 62 · elapsed 0h32m · about 0h39m left
+[21:10:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 64 · elapsed 0h33m · about 0h38m left
+[21:11:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 66 · elapsed 0h34m · about 0h37m left
+[21:12:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 68 · elapsed 0h35m · about 0h36m left
+[21:13:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 70 · elapsed 0h36m · about 0h35m left
+[21:14:21]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 71 · elapsed 0h37m · about 0h34m left
+[21:15:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 73 · elapsed 0h38m · about 0h33m left
+[21:16:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 75 · elapsed 0h39m · about 0h32m left
+[21:17:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 77 · elapsed 0h40m · about 0h31m left
+[21:18:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 79 · elapsed 0h41m · about 0h30m left
+[21:19:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 81 · elapsed 0h42m · about 0h29m left
+[21:20:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 83 · elapsed 0h43m · about 0h28m left
+[21:21:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 85 · elapsed 0h44m · about 0h27m left
+[21:22:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 87 · elapsed 0h45m · about 0h26m left
+[21:23:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 89 · elapsed 0h46m · about 0h25m left
+[21:24:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 91 · elapsed 0h47m · about 0h24m left
+[21:25:22]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 92 · elapsed 0h48m · about 0h23m left
+[21:26:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 94 · elapsed 0h49m · about 0h22m left
+[21:27:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 96 · elapsed 0h51m · about 0h21m left
+[21:28:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 98 · elapsed 0h51m · about 0h20m left
+[21:29:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 100 · elapsed 0h53m · about 0h23m left
+[21:30:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 0/20 · epoch 102 · elapsed 0h54m · about 0h22m left
+[21:31:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 1/20 · epoch 104 · elapsed 0h54m · about 0h20m left
+[21:32:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 1/20 · epoch 106 · elapsed 0h56m · about 0h22m left
+[21:33:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 1/20 · epoch 108 · elapsed 0h57m · about 0h21m left
+[21:34:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 1/20 · epoch 110 · elapsed 0h58m · about 0h20m left
+[21:35:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 1/20 · epoch 112 · elapsed 0h59m · about 0h20m left
+[21:36:23]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 2/20 · epoch 114 · elapsed 1h00m · about 0h18m left
+[21:37:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 3/20 · epoch 116 · elapsed 1h01m · about 0h17m left
+[21:38:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 3/20 · epoch 119 · elapsed 1h02m · about 0h17m left
+[21:39:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 3/20 · epoch 121 · elapsed 1h03m · about 0h16m left
+[21:40:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 3/20 · epoch 123 · elapsed 1h04m · about 0h15m left
+[21:41:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 3/20 · epoch 125 · elapsed 1h05m · about 0h14m left
+[21:42:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 4/20 · epoch 128 · elapsed 1h06m · about 0h14m left
+[21:43:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 4/20 · epoch 130 · elapsed 1h07m · about 0h13m left
+[21:44:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 4/20 · epoch 132 · elapsed 1h08m · about 0h13m left
+[21:45:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 6/20 · epoch 135 · elapsed 1h09m · about 0h12m left
+[21:46:24]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 6/20 · epoch 137 · elapsed 1h10m · about 0h12m left
+[21:47:27]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 6/20 · epoch 140 · elapsed 1h11m · about 0h12m left
+[21:48:27]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 8/20 · epoch 143 · elapsed 1h12m · about 0h11m left
+[21:49:27]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 9/20 · epoch 146 · elapsed 1h13m · about 0h11m left
+[21:50:27]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 9/20 · epoch 149 · elapsed 1h14m · about 0h11m left
+[21:51:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 9/20 · epoch 152 · elapsed 1h15m · about 0h11m left
+[21:52:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 10/20 · epoch 156 · elapsed 1h16m · about 0h10m left
+[21:53:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 11/20 · epoch 160 · elapsed 1h17m · about 0h09m left
+[21:54:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 11/20 · epoch 164 · elapsed 1h18m · about 0h08m left
+[21:55:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 12/20 · epoch 168 · elapsed 1h19m · about 0h08m left
+[21:56:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 12/20 · epoch 172 · elapsed 1h20m · about 0h07m left
+[21:57:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 14/20 · epoch 177 · elapsed 1h21m · about 0h06m left
+[21:58:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 15/20 · epoch 181 · elapsed 1h22m · about 0h06m left
+[21:59:28]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 15/20 · epoch 186 · elapsed 1h23m · about 0h07m left
+[22:00:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 15/20 · epoch 190 · elapsed 1h24m · about 0h07m left
+[22:01:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 16/20 · epoch 194 · elapsed 1h25m · about 0h06m left
+[22:02:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 16/20 · epoch 199 · elapsed 1h26m · about 0h06m left
+[22:03:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 16/20 · epoch 203 · elapsed 1h27m · about 0h05m left
+[22:04:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 16/20 · epoch 207 · elapsed 1h28m · about 0h07m left
+[22:05:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 16/20 · epoch 212 · elapsed 1h29m · about 0h07m left
+[22:06:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 18/20 · epoch 216 · elapsed 1h30m · about 0h06m left
+[22:07:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 18/20 · epoch 220 · elapsed 1h31m · about 0h07m left
+[22:08:29]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 18/20 · epoch 225 · elapsed 1h32m · about 0h07m left
+[22:09:30]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 18/20 · epoch 229 · elapsed 1h33m · about 0h06m left
+[22:10:30]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 18/20 · epoch 234 · elapsed 1h34m · about 0h05m left
+[22:11:30]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 19/20 · epoch 238 · elapsed 1h35m · about 0h04m left
+[22:12:30]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 19/20 · epoch 242 · elapsed 1h36m · about 0h04m left
+[22:13:30]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 19/20 · epoch 246 · elapsed 1h37m · about 0h03m left
+[22:14:30]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): running · models 19/20 · epoch 249 · elapsed 1h38m · about 0h03m left
+[22:14:55]   Step 4 · Paper exact, LOCO + LODO (grouped 10-fold): finished · models 20/20 · epoch 250 · elapsed 1h38m · Finished
+[22:14:56] ✓ Step 4 · Paper exact, LOCO + LODO (grouped 10-fold) — finished (1h38m)
+[22:14:56] ▶ Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold) — new run 20261109-221456_PAPER_input_4-recipe-LOCO (C·D×3·E·F·G·Z, schemes LOCO; rough time ≈1.5–2 h)
+[22:14:56]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[22:15:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch – · elapsed 0h00m
+[22:16:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 1 · elapsed 0h01m · about 1h16m left
+[22:17:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 2 · elapsed 0h02m · about 1h15m left
+[22:18:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 3 · elapsed 0h03m · about 1h14m left
+[22:19:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 4 · elapsed 0h04m · about 1h13m left
+[22:20:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 5 · elapsed 0h05m · about 1h12m left
+[22:21:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 6 · elapsed 0h06m · about 1h11m left
+[22:22:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 7 · elapsed 0h07m · about 1h10m left
+[22:23:57]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 8 · elapsed 0h08m · about 1h09m left
+[22:24:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 9 · elapsed 0h09m · about 1h08m left
+[22:25:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 10 · elapsed 0h10m · about 1h07m left
+[22:26:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 11 · elapsed 0h11m · about 1h06m left
+[22:27:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 12 · elapsed 0h12m · about 1h05m left
+[22:28:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 13 · elapsed 0h13m · about 1h04m left
+[22:29:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 14 · elapsed 0h14m · about 1h03m left
+[22:30:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 15 · elapsed 0h15m · about 1h02m left
+[22:31:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 16 · elapsed 0h16m · about 1h01m left
+[22:32:58]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 17 · elapsed 0h17m · about 1h00m left
+[22:33:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 18 · elapsed 0h18m · about 0h59m left
+[22:34:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 19 · elapsed 0h19m · about 0h58m left
+[22:35:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 20 · elapsed 0h20m · about 0h57m left
+[22:36:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 21 · elapsed 0h21m · about 0h56m left
+[22:37:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 22 · elapsed 0h22m · about 0h55m left
+[22:38:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 23 · elapsed 0h23m · about 0h53m left
+[22:39:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 24 · elapsed 0h24m · about 0h53m left
+[22:40:59]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 25 · elapsed 0h25m · about 0h52m left
+[22:42:00]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 26 · elapsed 0h26m · about 0h51m left
+[22:43:00]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 27 · elapsed 0h27m · about 0h50m left
+[22:44:00]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 28 · elapsed 0h28m · about 0h49m left
+[22:45:00]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 29 · elapsed 0h29m · about 0h48m left
+[22:46:00]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 30 · elapsed 0h30m · about 0h47m left
+[22:47:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 31 · elapsed 0h31m · about 0h46m left
+[22:48:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 32 · elapsed 0h32m · about 0h45m left
+[22:49:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 33 · elapsed 0h33m · about 0h44m left
+[22:50:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 34 · elapsed 0h34m · about 0h43m left
+[22:51:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 35 · elapsed 0h36m · about 0h42m left
+[22:52:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 36 · elapsed 0h36m · about 0h41m left
+[22:53:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 37 · elapsed 0h38m · about 0h40m left
+[22:54:01]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 38 · elapsed 0h38m · about 0h39m left
+[22:55:02]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 39 · elapsed 0h40m · about 0h38m left
+[22:56:02]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 40 · elapsed 0h41m · about 0h37m left
+[22:57:02]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 41 · elapsed 0h42m · about 0h36m left
+[22:58:02]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 42 · elapsed 0h43m · about 0h35m left
+[22:59:02]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 43 · elapsed 0h44m · about 0h34m left
+[23:00:02]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 0/30 · epoch 44 · elapsed 0h45m · about 0h33m left
+[23:01:02]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 1/30 · epoch 45 · elapsed 0h46m · about 0h31m left
+[23:02:03]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 2/30 · epoch 46 · elapsed 0h47m · about 0h29m left
+[23:03:03]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 2/30 · epoch 47 · elapsed 0h48m · about 0h28m left
+[23:04:03]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 2/30 · epoch 48 · elapsed 0h49m · about 0h27m left
+[23:05:03]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 2/30 · epoch 49 · elapsed 0h50m · about 0h26m left
+[23:06:03]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 3/30 · epoch 50 · elapsed 0h51m · about 0h28m left
+[23:07:03]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 8/30 · epoch 52 · elapsed 0h52m · about 0h26m left
+[23:08:04]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 9/30 · epoch 53 · elapsed 0h53m · about 0h24m left
+[23:09:04]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 10/30 · epoch 54 · elapsed 0h54m · about 0h23m left
+[23:10:04]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 11/30 · epoch 56 · elapsed 0h55m · about 0h22m left
+[23:11:04]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 12/30 · epoch 58 · elapsed 0h56m · about 0h22m left
+[23:12:04]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 13/30 · epoch 59 · elapsed 0h57m · about 0h21m left
+[23:13:04]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 14/30 · epoch 61 · elapsed 0h58m · about 0h20m left
+[23:14:05]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 15/30 · epoch 63 · elapsed 0h59m · about 0h19m left
+[23:15:05]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 65 · elapsed 1h00m · about 0h19m left
+[23:16:05]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 67 · elapsed 1h01m · about 0h18m left
+[23:17:05]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 69 · elapsed 1h02m · about 0h17m left
+[23:18:05]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 71 · elapsed 1h03m · about 0h17m left
+[23:19:06]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 73 · elapsed 1h04m · about 0h16m left
+[23:20:06]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 75 · elapsed 1h05m · about 0h15m left
+[23:21:06]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 77 · elapsed 1h06m · about 0h15m left
+[23:22:06]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 16/30 · epoch 79 · elapsed 1h07m · about 0h14m left
+[23:23:06]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 19/30 · epoch 82 · elapsed 1h08m · about 0h11m left
+[23:24:06]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 19/30 · epoch 84 · elapsed 1h09m · about 0h11m left
+[23:25:07]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 19/30 · epoch 87 · elapsed 1h10m · about 0h13m left
+[23:26:07]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 21/30 · epoch 90 · elapsed 1h11m · about 0h11m left
+[23:27:07]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 21/30 · epoch 93 · elapsed 1h12m · about 0h11m left
+[23:28:07]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 22/30 · epoch 96 · elapsed 1h13m · about 0h11m left
+[23:29:07]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 22/30 · epoch 99 · elapsed 1h14m · about 0h10m left
+[23:30:07]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 23/30 · epoch 103 · elapsed 1h15m · about 0h08m left
+[23:31:08]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 24/30 · epoch 107 · elapsed 1h16m · about 0h08m left
+[23:32:08]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 24/30 · epoch 110 · elapsed 1h17m · about 0h08m left
+[23:33:08]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 24/30 · epoch 114 · elapsed 1h18m · about 0h07m left
+[23:34:08]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 25/30 · epoch 117 · elapsed 1h19m · about 0h08m left
+[23:35:08]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 26/30 · epoch 121 · elapsed 1h20m · about 0h07m left
+[23:36:08]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 26/30 · epoch 124 · elapsed 1h21m · about 0h08m left
+[23:37:09]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 26/30 · epoch 127 · elapsed 1h22m · about 0h07m left
+[23:38:09]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 26/30 · epoch 131 · elapsed 1h23m · about 0h08m left
+[23:39:09]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 26/30 · epoch 134 · elapsed 1h24m · about 0h07m left
+[23:40:09]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 26/30 · epoch 138 · elapsed 1h25m · about 0h07m left
+[23:41:09]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 27/30 · epoch 142 · elapsed 1h26m · about 0h06m left
+[23:42:09]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 27/30 · epoch 146 · elapsed 1h27m · about 0h08m left
+[23:43:10]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 27/30 · epoch 149 · elapsed 1h28m · about 0h08m left
+[23:44:10]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 27/30 · epoch 152 · elapsed 1h29m · about 0h08m left
+[23:45:10]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 156 · elapsed 1h30m · about 0h07m left
+[23:46:10]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 159 · elapsed 1h31m · about 0h08m left
+[23:47:10]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 162 · elapsed 1h32m · about 0h08m left
+[23:48:10]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 166 · elapsed 1h33m · about 0h08m left
+[23:49:11]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 169 · elapsed 1h34m · about 0h07m left
+[23:50:11]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 172 · elapsed 1h35m · about 0h07m left
+[23:51:11]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 174 · elapsed 1h36m · about 0h09m left
+[23:52:11]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 28/30 · epoch 177 · elapsed 1h37m · about 0h09m left
+[23:53:11]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 29/30 · epoch 181 · elapsed 1h38m · about 0h07m left
+[23:54:12]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 29/30 · epoch 185 · elapsed 1h39m · about 0h07m left
+[23:55:12]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 29/30 · epoch 189 · elapsed 1h40m · about 0h06m left
+[23:56:12]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 29/30 · epoch 193 · elapsed 1h41m · about 0h05m left
+[23:57:12]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 29/30 · epoch 197 · elapsed 1h42m · about 0h05m left
+[23:58:12]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): running · models 29/30 · epoch 202 · elapsed 1h43m · about 0h03m left
+[23:58:42]   Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold): finished · models 30/30 · epoch 204 · elapsed 1h43m · Finished
+[23:58:43] ✓ Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold) — finished (1h43m)
+[23:58:43] ▶ Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold) — new run 20261109-235843_PAPER_input_4-recipe-LODO (C·D×3·E·F·G, schemes LODO; rough time ≈1.5–2 h)
+[23:58:43]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[23:59:43]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch – · elapsed 0h00m
+[00:00:43]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 1 · elapsed 0h01m · about 1h16m left
+[00:01:43]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 2 · elapsed 0h02m · about 1h15m left
+[00:02:44]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 3 · elapsed 0h03m · about 1h14m left
+[00:03:44]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 4 · elapsed 0h04m · about 1h13m left
+[00:04:44]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 5 · elapsed 0h05m · about 1h12m left
+[00:05:44]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 6 · elapsed 0h06m · about 1h11m left
+[00:06:44]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 7 · elapsed 0h07m · about 1h10m left
+[00:07:44]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 8 · elapsed 0h08m · about 1h09m left
+[00:08:45]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 9 · elapsed 0h09m · about 1h08m left
+[00:09:45]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 10 · elapsed 0h10m · about 1h07m left
+[00:10:45]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 11 · elapsed 0h11m · about 1h06m left
+[00:11:45]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 12 · elapsed 0h12m · about 1h05m left
+[00:12:45]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 13 · elapsed 0h13m · about 1h04m left
+[00:13:45]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 14 · elapsed 0h14m · about 1h02m left
+[00:14:46]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 15 · elapsed 0h15m · about 1h02m left
+[00:15:46]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 16 · elapsed 0h16m · about 1h01m left
+[00:16:46]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 17 · elapsed 0h17m · about 1h00m left
+[00:17:46]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 18 · elapsed 0h18m · about 0h59m left
+[00:18:46]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 19 · elapsed 0h19m · about 0h58m left
+[00:19:47]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 20 · elapsed 0h20m · about 0h57m left
+[00:20:47]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 21 · elapsed 0h21m · about 0h56m left
+[00:21:47]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 22 · elapsed 0h22m · about 0h55m left
+[00:22:47]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 23 · elapsed 0h24m · about 0h54m left
+[00:23:47]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 24 · elapsed 0h24m · about 0h53m left
+[00:24:47]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 25 · elapsed 0h26m · about 0h52m left
+[00:25:47]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 26 · elapsed 0h26m · about 0h51m left
+[00:26:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 27 · elapsed 0h28m · about 0h50m left
+[00:27:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 28 · elapsed 0h28m · about 0h49m left
+[00:28:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 29 · elapsed 0h30m · about 0h48m left
+[00:29:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 30 · elapsed 0h31m · about 0h47m left
+[00:30:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 31 · elapsed 0h32m · about 0h46m left
+[00:31:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 32 · elapsed 0h33m · about 0h45m left
+[00:32:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 33 · elapsed 0h34m · about 0h44m left
+[00:33:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 34 · elapsed 0h35m · about 0h43m left
+[00:34:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 35 · elapsed 0h36m · about 0h42m left
+[00:35:48]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 36 · elapsed 0h37m · about 0h41m left
+[00:36:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 37 · elapsed 0h38m · about 0h40m left
+[00:37:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 38 · elapsed 0h39m · about 0h39m left
+[00:38:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 39 · elapsed 0h40m · about 0h38m left
+[00:39:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 40 · elapsed 0h41m · about 0h37m left
+[00:40:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 41 · elapsed 0h42m · about 0h36m left
+[00:41:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 42 · elapsed 0h43m · about 0h35m left
+[00:42:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 43 · elapsed 0h44m · about 0h34m left
+[00:43:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 44 · elapsed 0h45m · about 0h33m left
+[00:44:49]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 45 · elapsed 0h46m · about 0h32m left
+[00:45:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 46 · elapsed 0h47m · about 0h31m left
+[00:46:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 47 · elapsed 0h48m · about 0h30m left
+[00:47:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 48 · elapsed 0h49m · about 0h29m left
+[00:48:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 49 · elapsed 0h50m · about 0h29m left
+[00:49:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 50 · elapsed 0h51m · about 0h30m left
+[00:50:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 51 · elapsed 0h52m · about 0h32m left
+[00:51:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 52 · elapsed 0h53m · about 0h32m left
+[00:52:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 0/30 · epoch 53 · elapsed 0h54m · about 0h31m left
+[00:53:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 1/30 · epoch 54 · elapsed 0h55m · about 0h29m left
+[00:54:50]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 1/30 · epoch 55 · elapsed 0h56m · about 0h28m left
+[00:55:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 2/30 · epoch 56 · elapsed 0h57m · about 0h27m left
+[00:56:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 3/30 · epoch 57 · elapsed 0h58m · about 0h33m left
+[00:57:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 4/30 · epoch 58 · elapsed 0h59m · about 0h31m left
+[00:58:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 4/30 · epoch 60 · elapsed 1h00m · about 0h27m left
+[00:59:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 5/30 · epoch 61 · elapsed 1h01m · about 0h26m left
+[01:00:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 6/30 · epoch 62 · elapsed 1h02m · about 0h25m left
+[01:01:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 6/30 · epoch 63 · elapsed 1h03m · about 0h24m left
+[01:02:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 8/30 · epoch 64 · elapsed 1h04m · about 0h22m left
+[01:03:51]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 11/30 · epoch 66 · elapsed 1h05m · about 0h19m left
+[01:04:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 12/30 · epoch 67 · elapsed 1h06m · about 0h18m left
+[01:05:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 13/30 · epoch 69 · elapsed 1h07m · about 0h17m left
+[01:06:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 16/30 · epoch 71 · elapsed 1h08m · about 0h15m left
+[01:07:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 16/30 · epoch 73 · elapsed 1h09m · about 0h15m left
+[01:08:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 16/30 · epoch 75 · elapsed 1h10m · about 0h14m left
+[01:09:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 18/30 · epoch 77 · elapsed 1h11m · about 0h13m left
+[01:10:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 19/30 · epoch 80 · elapsed 1h12m · about 0h11m left
+[01:11:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 20/30 · epoch 83 · elapsed 1h13m · about 0h10m left
+[01:12:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 22/30 · epoch 86 · elapsed 1h14m · about 0h08m left
+[01:13:52]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 23/30 · epoch 89 · elapsed 1h15m · about 0h07m left
+[01:14:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 25/30 · epoch 93 · elapsed 1h16m · about 0h06m left
+[01:15:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 27/30 · epoch 97 · elapsed 1h17m · about 0h05m left
+[01:16:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 27/30 · epoch 101 · elapsed 1h18m · about 0h05m left
+[01:17:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 27/30 · epoch 105 · elapsed 1h19m · about 0h05m left
+[01:18:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 27/30 · epoch 109 · elapsed 1h20m · about 0h07m left
+[01:19:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 28/30 · epoch 113 · elapsed 1h21m · about 0h06m left
+[01:20:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 28/30 · epoch 117 · elapsed 1h22m · about 0h06m left
+[01:21:53]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 28/30 · epoch 121 · elapsed 1h23m · about 0h05m left
+[01:22:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 125 · elapsed 1h24m · about 0h04m left
+[01:23:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 129 · elapsed 1h25m · about 0h08m left
+[01:24:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 133 · elapsed 1h26m · about 0h08m left
+[01:25:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 137 · elapsed 1h27m · about 0h07m left
+[01:26:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 141 · elapsed 1h28m · about 0h06m left
+[01:27:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 145 · elapsed 1h29m · about 0h06m left
+[01:28:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 149 · elapsed 1h30m · about 0h05m left
+[01:29:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 153 · elapsed 1h31m · about 0h04m left
+[01:30:54]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): running · models 29/30 · epoch 157 · elapsed 1h32m · about 0h04m left
+[01:31:45]   Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold): finished · models 30/30 · epoch 160 · elapsed 1h32m · Finished
+[01:31:46] ✓ Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold) — finished (1h32m)
+[01:31:46] ▶ step4 …
+[01:31:47]   LOCO: recipe vs plain ΔRMSE -0.0243, better on 10/10 folds
+[01:31:47]   LODO: recipe vs plain ΔRMSE +0.0110, better on 3/10 folds
+[01:31:47] ✓ step4 — done in 0h00m
+[01:31:47] ▶ finalise …
+[01:31:47]   final IC50 model: Paper exact + C·D×3·E·F·G·Z on processed_data · GDSC
+[01:31:47] ✓ finalise — done in 0h00m
+[01:31:47] ▶ Final · IC50 model on ALL of processed_data (the decided recipe) — new run 20261110-013147_PAPER_processed_F1-ic50 (C·D×3·E·F·G·Z, schemes all-data model only; rough time ≈0.5–1 h)
+[01:31:47]   Final · IC50 model on ALL of processed_data (the decided recipe): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[01:32:47]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 2 · elapsed 0h00m · about 0h42m left
+[01:33:47]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 6 · elapsed 0h01m · about 0h39m left
+[01:34:47]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 9 · elapsed 0h02m · about 0h38m left
+[01:35:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 12 · elapsed 0h03m · about 0h37m left
+[01:36:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 16 · elapsed 0h04m · about 0h37m left
+[01:37:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 19 · elapsed 0h05m · about 0h35m left
+[01:38:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 23 · elapsed 0h06m · about 0h34m left
+[01:39:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 26 · elapsed 0h07m · about 0h33m left
+[01:40:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 29 · elapsed 0h08m · about 0h32m left
+[01:41:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 33 · elapsed 0h09m · about 0h35m left
+[01:42:48]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 36 · elapsed 0h10m · about 0h30m left
+[01:43:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 40 · elapsed 0h11m · about 0h29m left
+[01:44:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 43 · elapsed 0h12m · about 0h28m left
+[01:45:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 0/3 · epoch 46 · elapsed 0h13m · about 0h27m left
+[01:46:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 1/3 · epoch 50 · elapsed 0h14m · about 0h27m left
+[01:47:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 53 · elapsed 0h15m · about 0h17m left
+[01:48:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 56 · elapsed 0h16m · about 0h25m left
+[01:49:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 60 · elapsed 0h17m · about 0h24m left
+[01:50:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 63 · elapsed 0h18m · about 0h24m left
+[01:51:49]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 66 · elapsed 0h19m · about 0h24m left
+[01:52:50]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 69 · elapsed 0h20m · about 0h21m left
+[01:53:50]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 72 · elapsed 0h21m · about 0h20m left
+[01:54:50]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 76 · elapsed 0h22m · about 0h19m left
+[01:55:50]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 79 · elapsed 0h23m · about 0h18m left
+[01:56:50]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 82 · elapsed 0h24m · about 0h17m left
+[01:57:50]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 86 · elapsed 0h25m · about 0h16m left
+[01:58:50]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 89 · elapsed 0h26m · about 0h15m left
+[01:59:51]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 92 · elapsed 0h27m · about 0h14m left
+[02:00:51]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 96 · elapsed 0h28m · about 0h13m left
+[02:01:51]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 99 · elapsed 0h29m · about 0h12m left
+[02:02:51]   Final · IC50 model on ALL of processed_data (the decided recipe): running · models 2/3 · epoch 103 · elapsed 0h30m · about 0h00m left
+[02:02:56]   Final · IC50 model on ALL of processed_data (the decided recipe): finished · models 3/3 · epoch 103 · elapsed 0h31m · Finished
+[02:02:57] ✓ Final · IC50 model on ALL of processed_data (the decided recipe) — finished (0h31m)
+[02:02:57] ▶ Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC) — new run 20261110-020257_GRAPH_csa-ALL_F2-aac-A (C·E·F·G, schemes all-data model only; rough time ≈2–3 h)
+[02:02:57]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[02:03:57]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch – · elapsed 0h00m
+[02:04:57]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 1 · elapsed 0h01m · about 3h13m left
+[02:05:57]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 1 · elapsed 0h02m · about 3h12m left
+[02:06:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 2 · elapsed 0h03m · about 3h14m left
+[02:07:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 3 · elapsed 0h04m · about 2h52m left
+[02:08:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 4 · elapsed 0h05m · about 2h48m left
+[02:09:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 5 · elapsed 0h06m · about 2h48m left
+[02:10:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 6 · elapsed 0h07m · about 2h46m left
+[02:11:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 6 · elapsed 0h08m · about 2h45m left
+[02:12:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 7 · elapsed 0h09m · about 2h45m left
+[02:13:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 8 · elapsed 0h10m · about 2h44m left
+[02:14:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 9 · elapsed 0h11m · about 2h43m left
+[02:15:58]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 10 · elapsed 0h12m · about 2h41m left
+[02:16:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 10 · elapsed 0h13m · about 2h40m left
+[02:17:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 11 · elapsed 0h14m · about 2h41m left
+[02:18:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 12 · elapsed 0h15m · about 2h38m left
+[02:19:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 13 · elapsed 0h16m · about 2h37m left
+[02:20:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 14 · elapsed 0h17m · about 2h39m left
+[02:21:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 14 · elapsed 0h18m · about 2h38m left
+[02:22:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 15 · elapsed 0h19m · about 2h35m left
+[02:23:59]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 16 · elapsed 0h20m · about 2h32m left
+[02:25:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 17 · elapsed 0h21m · about 2h46m left
+[02:26:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 17 · elapsed 0h22m · about 2h45m left
+[02:27:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 18 · elapsed 0h23m · about 2h37m left
+[02:28:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 19 · elapsed 0h24m · about 2h31m left
+[02:29:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 20 · elapsed 0h25m · about 2h29m left
+[02:30:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 21 · elapsed 0h26m · about 2h33m left
+[02:31:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 21 · elapsed 0h27m · about 2h32m left
+[02:32:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 22 · elapsed 0h28m · about 2h31m left
+[02:33:00]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 23 · elapsed 0h29m · about 2h25m left
+[02:34:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 24 · elapsed 0h30m · about 2h24m left
+[02:35:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 25 · elapsed 0h31m · about 2h25m left
+[02:36:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 25 · elapsed 0h32m · about 2h24m left
+[02:37:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 26 · elapsed 0h33m · about 2h22m left
+[02:38:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 27 · elapsed 0h34m · about 2h20m left
+[02:39:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 28 · elapsed 0h35m · about 2h19m left
+[02:40:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 29 · elapsed 0h36m · about 2h18m left
+[02:41:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 29 · elapsed 0h37m · about 2h17m left
+[02:42:01]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 30 · elapsed 0h38m · about 2h15m left
+[02:43:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 31 · elapsed 0h39m · about 2h15m left
+[02:44:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 32 · elapsed 0h40m · about 2h15m left
+[02:45:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 33 · elapsed 0h42m · about 2h15m left
+[02:46:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 33 · elapsed 0h43m · about 2h14m left
+[02:47:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 34 · elapsed 0h43m · about 2h16m left
+[02:48:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 35 · elapsed 0h45m · about 2h18m left
+[02:49:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 36 · elapsed 0h46m · about 2h10m left
+[02:50:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 37 · elapsed 0h47m · about 2h11m left
+[02:51:02]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 37 · elapsed 0h48m · about 2h09m left
+[02:52:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 38 · elapsed 0h49m · about 2h08m left
+[02:53:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 39 · elapsed 0h50m · about 2h07m left
+[02:54:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 40 · elapsed 0h51m · about 2h05m left
+[02:55:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 41 · elapsed 0h52m · about 2h05m left
+[02:56:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 41 · elapsed 0h53m · about 2h04m left
+[02:57:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 42 · elapsed 0h54m · about 2h02m left
+[02:58:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 43 · elapsed 0h55m · about 2h02m left
+[02:59:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 44 · elapsed 0h56m · about 2h01m left
+[03:00:03]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 44 · elapsed 0h57m · about 2h00m left
+[03:01:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 45 · elapsed 0h58m · about 1h59m left
+[03:02:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 46 · elapsed 0h59m · about 1h57m left
+[03:03:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 47 · elapsed 1h00m · about 1h55m left
+[03:04:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 48 · elapsed 1h01m · about 1h55m left
+[03:05:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 48 · elapsed 1h02m · about 1h54m left
+[03:06:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 49 · elapsed 1h03m · about 1h54m left
+[03:07:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 50 · elapsed 1h04m · about 1h52m left
+[03:08:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 51 · elapsed 1h05m · about 1h51m left
+[03:09:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 52 · elapsed 1h06m · about 1h48m left
+[03:10:04]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 53 · elapsed 1h07m · about 1h49m left
+[03:11:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 53 · elapsed 1h08m · about 1h48m left
+[03:12:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 54 · elapsed 1h09m · about 1h46m left
+[03:13:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 55 · elapsed 1h10m · about 1h44m left
+[03:14:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 56 · elapsed 1h11m · about 1h44m left
+[03:15:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 57 · elapsed 1h12m · about 1h45m left
+[03:16:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 57 · elapsed 1h13m · about 1h44m left
+[03:17:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 58 · elapsed 1h14m · about 1h42m left
+[03:18:05]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 59 · elapsed 1h15m · about 1h40m left
+[03:19:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 60 · elapsed 1h16m · about 1h39m left
+[03:20:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 61 · elapsed 1h17m · about 1h40m left
+[03:21:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 61 · elapsed 1h18m · about 1h39m left
+[03:22:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 62 · elapsed 1h19m · about 1h36m left
+[03:23:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 63 · elapsed 1h20m · about 1h34m left
+[03:24:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 64 · elapsed 1h21m · about 1h33m left
+[03:25:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 65 · elapsed 1h22m · about 1h33m left
+[03:26:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 65 · elapsed 1h23m · about 1h32m left
+[03:27:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 66 · elapsed 1h24m · about 1h31m left
+[03:28:06]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 67 · elapsed 1h25m · about 1h29m left
+[03:29:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 68 · elapsed 1h26m · about 1h28m left
+[03:30:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 69 · elapsed 1h27m · about 1h28m left
+[03:31:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 69 · elapsed 1h28m · about 1h27m left
+[03:32:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 70 · elapsed 1h29m · about 1h26m left
+[03:33:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 71 · elapsed 1h30m · about 1h25m left
+[03:34:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 72 · elapsed 1h31m · about 1h25m left
+[03:35:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 73 · elapsed 1h32m · about 1h24m left
+[03:36:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 73 · elapsed 1h33m · about 1h23m left
+[03:37:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 74 · elapsed 1h34m · about 1h21m left
+[03:38:07]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 75 · elapsed 1h35m · about 1h19m left
+[03:39:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 76 · elapsed 1h36m · about 1h19m left
+[03:40:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 77 · elapsed 1h37m · about 1h18m left
+[03:41:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 77 · elapsed 1h38m · about 1h17m left
+[03:42:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 78 · elapsed 1h39m · about 1h16m left
+[03:43:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 79 · elapsed 1h40m · about 1h15m left
+[03:44:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 80 · elapsed 1h41m · about 1h15m left
+[03:45:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 81 · elapsed 1h42m · about 1h16m left
+[03:46:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 81 · elapsed 1h43m · about 1h15m left
+[03:47:08]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 82 · elapsed 1h44m · about 1h12m left
+[03:48:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 83 · elapsed 1h45m · about 1h13m left
+[03:49:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 84 · elapsed 1h46m · about 1h11m left
+[03:50:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 85 · elapsed 1h47m · about 1h08m left
+[03:51:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 85 · elapsed 1h48m · about 1h07m left
+[03:52:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 86 · elapsed 1h49m · about 1h08m left
+[03:53:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 87 · elapsed 1h50m · about 1h06m left
+[03:54:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 88 · elapsed 1h51m · about 1h05m left
+[03:55:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 89 · elapsed 1h52m · about 1h05m left
+[03:56:09]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 89 · elapsed 1h53m · about 1h04m left
+[03:57:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 90 · elapsed 1h54m · about 1h02m left
+[03:58:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 91 · elapsed 1h55m · about 1h00m left
+[03:59:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 92 · elapsed 1h56m · about 0h59m left
+[04:00:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 93 · elapsed 1h57m · about 1h00m left
+[04:01:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 93 · elapsed 1h58m · about 0h59m left
+[04:02:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 94 · elapsed 1h59m · about 0h57m left
+[04:03:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 95 · elapsed 2h00m · about 0h56m left
+[04:04:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 96 · elapsed 2h01m · about 0h55m left
+[04:05:10]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 97 · elapsed 2h02m · about 0h55m left
+[04:06:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 97 · elapsed 2h03m · about 0h54m left
+[04:07:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 98 · elapsed 2h04m · about 0h52m left
+[04:08:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 99 · elapsed 2h05m · about 0h51m left
+[04:09:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 100 · elapsed 2h06m · about 0h49m left
+[04:10:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 101 · elapsed 2h07m · about 0h49m left
+[04:11:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 101 · elapsed 2h08m · about 0h48m left
+[04:12:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 102 · elapsed 2h09m · about 0h47m left
+[04:13:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 103 · elapsed 2h10m · about 0h45m left
+[04:14:11]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 104 · elapsed 2h11m · about 0h45m left
+[04:15:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 105 · elapsed 2h12m · about 0h44m left
+[04:16:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 105 · elapsed 2h13m · about 0h43m left
+[04:17:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 106 · elapsed 2h14m · about 0h42m left
+[04:18:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 107 · elapsed 2h15m · about 0h40m left
+[04:19:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 108 · elapsed 2h16m · about 0h39m left
+[04:20:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 109 · elapsed 2h17m · about 0h40m left
+[04:21:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 109 · elapsed 2h18m · about 0h39m left
+[04:22:12]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 110 · elapsed 2h19m · about 0h44m left
+[04:23:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 111 · elapsed 2h20m · about 0h36m left
+[04:24:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 112 · elapsed 2h21m · about 0h35m left
+[04:25:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 112 · elapsed 2h22m · about 0h34m left
+[04:26:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 113 · elapsed 2h23m · about 0h33m left
+[04:27:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 114 · elapsed 2h24m · about 0h32m left
+[04:28:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 115 · elapsed 2h25m · about 0h31m left
+[04:29:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 116 · elapsed 2h26m · about 0h30m left
+[04:30:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 116 · elapsed 2h27m · about 0h29m left
+[04:31:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 117 · elapsed 2h28m · about 0h28m left
+[04:32:13]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 118 · elapsed 2h29m · about 0h27m left
+[04:33:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 119 · elapsed 2h30m · about 0h26m left
+[04:34:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 120 · elapsed 2h31m · about 0h25m left
+[04:35:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 120 · elapsed 2h32m · about 0h24m left
+[04:36:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 121 · elapsed 2h33m · about 0h23m left
+[04:37:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 122 · elapsed 2h34m · about 0h25m left
+[04:38:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 123 · elapsed 2h35m · about 0h24m left
+[04:39:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 124 · elapsed 2h36m · about 0h25m left
+[04:40:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 124 · elapsed 2h37m · about 0h24m left
+[04:41:14]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 125 · elapsed 2h38m · about 0h24m left
+[04:42:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 126 · elapsed 2h39m · about 0h24m left
+[04:43:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 127 · elapsed 2h40m · about 0h24m left
+[04:44:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 128 · elapsed 2h41m · about 0h25m left
+[04:45:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 128 · elapsed 2h42m · about 0h24m left
+[04:46:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 129 · elapsed 2h43m · about 0h24m left
+[04:47:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 130 · elapsed 2h44m · about 0h24m left
+[04:48:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 131 · elapsed 2h45m · about 0h22m left
+[04:49:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 132 · elapsed 2h46m · about 0h25m left
+[04:50:15]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 132 · elapsed 2h47m · about 0h24m left
+[04:51:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 133 · elapsed 2h48m · about 0h23m left
+[04:52:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 134 · elapsed 2h49m · about 0h22m left
+[04:53:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 135 · elapsed 2h50m · about 0h21m left
+[04:54:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 136 · elapsed 2h51m · about 0h25m left
+[04:55:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 136 · elapsed 2h52m · about 0h24m left
+[04:56:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 137 · elapsed 2h53m · about 0h24m left
+[04:57:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 138 · elapsed 2h54m · about 0h24m left
+[04:58:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 139 · elapsed 2h55m · about 0h24m left
+[04:59:16]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 140 · elapsed 2h56m · about 0h24m left
+[05:00:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 140 · elapsed 2h57m · about 0h23m left
+[05:01:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 141 · elapsed 2h58m · about 0h25m left
+[05:02:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 142 · elapsed 2h59m · about 0h23m left
+[05:03:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 143 · elapsed 3h00m · about 0h25m left
+[05:04:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 144 · elapsed 3h01m · about 0h24m left
+[05:05:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 144 · elapsed 3h02m · about 0h23m left
+[05:06:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 145 · elapsed 3h03m · about 0h24m left
+[05:07:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 146 · elapsed 3h04m · about 0h23m left
+[05:08:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 147 · elapsed 3h05m · about 0h25m left
+[05:09:17]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 148 · elapsed 3h06m · about 0h24m left
+[05:10:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 148 · elapsed 3h07m · about 0h23m left
+[05:11:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 149 · elapsed 3h08m · about 0h22m left
+[05:12:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 150 · elapsed 3h09m · about 0h24m left
+[05:13:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 151 · elapsed 3h10m · about 0h23m left
+[05:14:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 152 · elapsed 3h11m · about 0h25m left
+[05:15:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 152 · elapsed 3h12m · about 0h24m left
+[05:16:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 153 · elapsed 3h13m · about 0h24m left
+[05:17:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 154 · elapsed 3h14m · about 0h24m left
+[05:18:18]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 155 · elapsed 3h15m · about 0h23m left
+[05:19:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 156 · elapsed 3h16m · about 0h25m left
+[05:20:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 156 · elapsed 3h17m · about 0h24m left
+[05:21:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 157 · elapsed 3h18m · about 0h24m left
+[05:22:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 158 · elapsed 3h19m · about 0h24m left
+[05:23:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 159 · elapsed 3h20m · about 0h23m left
+[05:24:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 160 · elapsed 3h21m · about 0h22m left
+[05:25:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 160 · elapsed 3h22m · about 0h21m left
+[05:26:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 161 · elapsed 3h23m · about 0h20m left
+[05:27:19]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 162 · elapsed 3h24m · about 0h24m left
+[05:28:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 163 · elapsed 3h25m · about 0h24m left
+[05:29:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 164 · elapsed 3h26m · about 0h24m left
+[05:30:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 164 · elapsed 3h27m · about 0h23m left
+[05:31:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 165 · elapsed 3h28m · about 0h21m left
+[05:32:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 166 · elapsed 3h29m · about 0h20m left
+[05:33:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 167 · elapsed 3h30m · about 0h19m left
+[05:34:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 168 · elapsed 3h31m · about 0h19m left
+[05:35:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 169 · elapsed 3h32m · about 0h25m left
+[05:36:20]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 169 · elapsed 3h33m · about 0h24m left
+[05:37:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 170 · elapsed 3h34m · about 0h23m left
+[05:38:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 171 · elapsed 3h35m · about 0h22m left
+[05:39:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 172 · elapsed 3h36m · about 0h21m left
+[05:40:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 173 · elapsed 3h37m · about 0h20m left
+[05:41:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 173 · elapsed 3h38m · about 0h19m left
+[05:42:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 174 · elapsed 3h39m · about 0h24m left
+[05:43:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 175 · elapsed 3h40m · about 0h23m left
+[05:44:21]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 176 · elapsed 3h41m · about 0h22m left
+[05:45:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 177 · elapsed 3h42m · about 0h21m left
+[05:46:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 177 · elapsed 3h43m · about 0h20m left
+[05:47:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 178 · elapsed 3h44m · about 0h26m left
+[05:48:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 179 · elapsed 3h45m · about 0h24m left
+[05:49:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 180 · elapsed 3h46m · about 0h25m left
+[05:50:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 181 · elapsed 3h47m · about 0h25m left
+[05:51:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 181 · elapsed 3h48m · about 0h24m left
+[05:52:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 182 · elapsed 3h49m · about 0h24m left
+[05:53:22]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 183 · elapsed 3h50m · about 0h23m left
+[05:54:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 184 · elapsed 3h51m · about 0h22m left
+[05:55:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 185 · elapsed 3h52m · about 0h25m left
+[05:56:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 185 · elapsed 3h53m · about 0h24m left
+[05:57:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 186 · elapsed 3h54m · about 0h24m left
+[05:58:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 187 · elapsed 3h55m · about 0h24m left
+[05:59:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 188 · elapsed 3h56m · about 0h24m left
+[06:00:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 189 · elapsed 3h57m · about 0h25m left
+[06:01:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 189 · elapsed 3h58m · about 0h24m left
+[06:02:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 190 · elapsed 3h59m · about 0h24m left
+[06:03:23]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 191 · elapsed 4h00m · about 0h23m left
+[06:04:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 192 · elapsed 4h01m · about 0h22m left
+[06:05:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 193 · elapsed 4h02m · about 0h25m left
+[06:06:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 193 · elapsed 4h03m · about 0h24m left
+[06:07:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 194 · elapsed 4h04m · about 0h22m left
+[06:08:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 195 · elapsed 4h05m · about 0h21m left
+[06:09:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 196 · elapsed 4h06m · about 0h24m left
+[06:10:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 197 · elapsed 4h07m · about 0h24m left
+[06:11:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 197 · elapsed 4h08m · about 0h23m left
+[06:12:24]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 198 · elapsed 4h09m · about 0h24m left
+[06:13:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 199 · elapsed 4h10m · about 0h25m left
+[06:14:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 200 · elapsed 4h11m · about 0h23m left
+[06:15:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 201 · elapsed 4h12m · about 0h25m left
+[06:16:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 201 · elapsed 4h13m · about 0h24m left
+[06:17:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 202 · elapsed 4h14m · about 0h24m left
+[06:18:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 203 · elapsed 4h15m · about 0h23m left
+[06:19:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 204 · elapsed 4h16m · about 0h22m left
+[06:20:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 205 · elapsed 4h17m · about 0h21m left
+[06:21:25]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 205 · elapsed 4h18m · about 0h20m left
+[06:22:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 206 · elapsed 4h19m · about 0h19m left
+[06:23:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 207 · elapsed 4h20m · about 0h18m left
+[06:24:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 208 · elapsed 4h21m · about 0h17m left
+[06:25:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 209 · elapsed 4h22m · about 0h16m left
+[06:26:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 209 · elapsed 4h23m · about 0h15m left
+[06:27:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 210 · elapsed 4h24m · about 0h25m left
+[06:28:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 211 · elapsed 4h25m · about 0h23m left
+[06:29:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 212 · elapsed 4h26m · about 0h23m left
+[06:30:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 213 · elapsed 4h27m · about 0h26m left
+[06:31:26]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 213 · elapsed 4h28m · about 0h25m left
+[06:32:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 214 · elapsed 4h29m · about 0h24m left
+[06:33:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 215 · elapsed 4h30m · about 0h25m left
+[06:34:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 216 · elapsed 4h31m · about 0h25m left
+[06:35:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 217 · elapsed 4h32m · about 0h25m left
+[06:36:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 217 · elapsed 4h33m · about 0h24m left
+[06:37:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 218 · elapsed 4h34m · about 0h24m left
+[06:38:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 219 · elapsed 4h35m · about 0h23m left
+[06:39:27]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 220 · elapsed 4h36m · about 0h22m left
+[06:40:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 221 · elapsed 4h37m · about 0h21m left
+[06:41:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 221 · elapsed 4h38m · about 0h20m left
+[06:42:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 222 · elapsed 4h39m · about 0h26m left
+[06:43:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 223 · elapsed 4h40m · about 0h24m left
+[06:44:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 224 · elapsed 4h41m · about 0h26m left
+[06:45:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 224 · elapsed 4h42m · about 0h25m left
+[06:46:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 225 · elapsed 4h43m · about 0h22m left
+[06:47:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 226 · elapsed 4h44m · about 0h25m left
+[06:48:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 227 · elapsed 4h45m · about 0h24m left
+[06:49:28]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 228 · elapsed 4h46m · about 0h22m left
+[06:50:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 228 · elapsed 4h47m · about 0h21m left
+[06:51:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 229 · elapsed 4h48m · about 0h24m left
+[06:52:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 230 · elapsed 4h49m · about 0h24m left
+[06:53:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 231 · elapsed 4h50m · about 0h23m left
+[06:54:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 232 · elapsed 4h51m · about 0h22m left
+[06:55:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 232 · elapsed 4h52m · about 0h21m left
+[06:56:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 233 · elapsed 4h53m · about 0h24m left
+[06:57:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 234 · elapsed 4h54m · about 0h24m left
+[06:58:29]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 235 · elapsed 4h55m · about 0h23m left
+[06:59:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 236 · elapsed 4h56m · about 0h25m left
+[07:00:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 236 · elapsed 4h57m · about 0h24m left
+[07:01:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 237 · elapsed 4h58m · about 0h24m left
+[07:02:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 238 · elapsed 4h59m · about 0h22m left
+[07:03:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 239 · elapsed 5h00m · about 0h24m left
+[07:04:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 240 · elapsed 5h01m · about 0h25m left
+[07:05:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 240 · elapsed 5h02m · about 0h24m left
+[07:06:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 241 · elapsed 5h03m · about 0h22m left
+[07:07:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 242 · elapsed 5h04m · about 0h22m left
+[07:08:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 243 · elapsed 5h05m · about 0h20m left
+[07:09:30]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 244 · elapsed 5h06m · about 0h25m left
+[07:10:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 245 · elapsed 5h07m · about 0h25m left
+[07:11:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 245 · elapsed 5h08m · about 0h24m left
+[07:12:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 246 · elapsed 5h09m · about 0h23m left
+[07:13:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 247 · elapsed 5h10m · about 0h24m left
+[07:14:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 248 · elapsed 5h11m · about 0h25m left
+[07:15:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 249 · elapsed 5h12m · about 0h25m left
+[07:16:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 249 · elapsed 5h13m · about 0h24m left
+[07:17:31]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 250 · elapsed 5h14m · about 0h24m left
+[07:18:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 251 · elapsed 5h15m · about 0h23m left
+[07:19:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 252 · elapsed 5h16m · about 0h22m left
+[07:20:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 253 · elapsed 5h17m · about 0h21m left
+[07:21:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 253 · elapsed 5h18m · about 0h20m left
+[07:22:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 254 · elapsed 5h19m · about 0h24m left
+[07:23:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 255 · elapsed 5h20m · about 0h23m left
+[07:24:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 256 · elapsed 5h21m · about 0h25m left
+[07:25:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 257 · elapsed 5h22m · about 0h25m left
+[07:26:32]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 257 · elapsed 5h23m · about 0h24m left
+[07:27:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 258 · elapsed 5h24m · about 0h24m left
+[07:28:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 259 · elapsed 5h25m · about 0h24m left
+[07:29:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 260 · elapsed 5h26m · about 0h24m left
+[07:30:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 261 · elapsed 5h27m · about 0h22m left
+[07:31:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 261 · elapsed 5h28m · about 0h21m left
+[07:32:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 262 · elapsed 5h29m · about 0h24m left
+[07:33:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 263 · elapsed 5h30m · about 0h24m left
+[07:34:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 264 · elapsed 5h31m · about 0h23m left
+[07:35:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 265 · elapsed 5h32m · about 0h22m left
+[07:36:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 265 · elapsed 5h33m · about 0h22m left
+[07:37:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 266 · elapsed 5h34m · about 0h25m left
+[07:38:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 267 · elapsed 5h35m · about 0h23m left
+[07:39:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 268 · elapsed 5h36m · about 0h22m left
+[07:40:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 269 · elapsed 5h37m · about 0h22m left
+[07:41:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 269 · elapsed 5h38m · about 0h21m left
+[07:42:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 270 · elapsed 5h39m · about 0h24m left
+[07:43:34]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 271 · elapsed 5h40m · about 0h24m left
+[07:44:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 272 · elapsed 5h41m · about 0h25m left
+[07:45:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 273 · elapsed 5h42m · about 0h24m left
+[07:46:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 273 · elapsed 5h43m · about 0h23m left
+[07:47:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 274 · elapsed 5h44m · about 0h23m left
+[07:48:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 275 · elapsed 5h45m · about 0h21m left
+[07:49:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 276 · elapsed 5h46m · about 0h20m left
+[07:50:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 276 · elapsed 5h47m · about 0h19m left
+[07:51:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 277 · elapsed 5h48m · about 0h19m left
+[07:52:35]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 278 · elapsed 5h49m · about 0h24m left
+[07:53:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 279 · elapsed 5h50m · about 0h23m left
+[07:54:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 280 · elapsed 5h51m · about 0h23m left
+[07:55:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 280 · elapsed 5h52m · about 0h22m left
+[07:56:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 281 · elapsed 5h53m · about 0h23m left
+[07:57:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 282 · elapsed 5h54m · about 0h22m left
+[07:58:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 283 · elapsed 5h55m · about 0h21m left
+[07:59:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 284 · elapsed 5h56m · about 0h20m left
+[08:00:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 284 · elapsed 5h57m · about 0h19m left
+[08:01:36]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 285 · elapsed 5h58m · about 0h18m left
+[08:02:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 286 · elapsed 5h59m · about 0h17m left
+[08:03:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 287 · elapsed 6h00m · about 0h16m left
+[08:04:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 288 · elapsed 6h01m · about 0h15m left
+[08:05:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 288 · elapsed 6h02m · about 0h14m left
+[08:06:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 289 · elapsed 6h03m · about 0h13m left
+[08:07:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 290 · elapsed 6h04m · about 0h12m left
+[08:08:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 291 · elapsed 6h05m · about 0h11m left
+[08:09:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 292 · elapsed 6h06m · about 0h10m left
+[08:10:37]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 292 · elapsed 6h07m · about 0h09m left
+[08:11:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 293 · elapsed 6h08m · about 0h09m left
+[08:12:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 294 · elapsed 6h09m · about 0h07m left
+[08:13:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 295 · elapsed 6h10m · about 0h06m left
+[08:14:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 296 · elapsed 6h11m · about 0h04m left
+[08:15:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 296 · elapsed 6h12m · about 0h03m left
+[08:16:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 297 · elapsed 6h13m · about 0h03m left
+[08:17:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 298 · elapsed 6h14m · about 0h02m left
+[08:18:38]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): running · models 0/1 · epoch 299 · elapsed 6h15m · about 0h01m left
+[08:19:33]   Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC): finished · models 1/1 · epoch 300 · elapsed 6h16m · Finished
+[08:19:34] ✓ Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC) — finished (6h16m)
+[08:19:34] ▶ Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M) — new run 20261110-081934_GRAPH_csa-ALL_F3-aac-B (C·E·F·G·M·R·S, schemes all-data model only; rough time ≈0.5–1.5 h)
+[08:19:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): starting · models 0/? · epoch – · elapsed 0h00m · Starting the training process…
+[08:20:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch – · elapsed 0h00m
+[08:21:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch – · elapsed 0h01m
+[08:22:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 1 · elapsed 0h02m · about 4h45m left
+[08:23:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 1 · elapsed 0h03m · about 4h45m left
+[08:24:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 2 · elapsed 0h04m · about 5h12m left
+[08:25:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 2 · elapsed 0h05m · about 5h11m left
+[08:26:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 3 · elapsed 0h06m · about 4h55m left
+[08:27:35]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 3 · elapsed 0h07m · about 4h54m left
+[08:28:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 4 · elapsed 0h08m · about 4h56m left
+[08:29:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 4 · elapsed 0h09m · about 4h55m left
+[08:30:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 4 · elapsed 0h10m · about 4h54m left
+[08:31:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 5 · elapsed 0h11m · about 5h00m left
+[08:32:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 5 · elapsed 0h12m · about 4h59m left
+[08:33:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 6 · elapsed 0h13m · about 4h50m left
+[08:34:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 6 · elapsed 0h14m · about 4h49m left
+[08:35:36]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 7 · elapsed 0h15m · about 5h25m left
+[08:36:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 7 · elapsed 0h16m · about 5h23m left
+[08:37:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 8 · elapsed 0h17m · about 4h43m left
+[08:38:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 8 · elapsed 0h18m · about 4h42m left
+[08:39:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 9 · elapsed 0h19m · about 4h42m left
+[08:40:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 9 · elapsed 0h20m · about 4h41m left
+[08:41:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 9 · elapsed 0h21m · about 4h40m left
+[08:42:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 10 · elapsed 0h22m · about 4h37m left
+[08:43:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 10 · elapsed 0h23m · about 4h36m left
+[08:44:37]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 11 · elapsed 0h24m · about 4h34m left
+[08:45:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 11 · elapsed 0h25m · about 4h33m left
+[08:46:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 12 · elapsed 0h26m · about 4h33m left
+[08:47:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 12 · elapsed 0h27m · about 4h32m left
+[08:48:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 13 · elapsed 0h28m · about 4h43m left
+[08:49:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 13 · elapsed 0h29m · about 4h42m left
+[08:50:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 14 · elapsed 0h30m · about 4h34m left
+[08:51:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 14 · elapsed 0h31m · about 4h33m left
+[08:52:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 14 · elapsed 0h32m · about 4h32m left
+[08:53:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 15 · elapsed 0h33m · about 4h49m left
+[08:54:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 15 · elapsed 0h34m · about 4h48m left
+[08:55:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 16 · elapsed 0h35m · about 4h30m left
+[08:56:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 16 · elapsed 0h36m · about 4h29m left
+[08:57:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 17 · elapsed 0h37m · about 4h23m left
+[08:58:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 17 · elapsed 0h38m · about 4h22m left
+[08:59:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 18 · elapsed 0h39m · about 4h21m left
+[09:00:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 18 · elapsed 0h40m · about 4h20m left
+[09:01:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 19 · elapsed 0h42m · about 4h08m left
+[09:02:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 19 · elapsed 0h42m · about 4h07m left
+[09:03:39]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 20 · elapsed 0h43m · about 4h18m left
+[09:04:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 20 · elapsed 0h45m · about 4h17m left
+[09:05:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 21 · elapsed 0h46m · about 4h13m left
+[09:06:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 21 · elapsed 0h46m · about 4h12m left
+[09:07:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 21 · elapsed 0h48m · about 4h11m left
+[09:08:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 22 · elapsed 0h48m · about 4h13m left
+[09:09:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 22 · elapsed 0h50m · about 4h12m left
+[09:10:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 23 · elapsed 0h51m · about 4h15m left
+[09:11:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 23 · elapsed 0h52m · about 4h14m left
+[09:12:40]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 24 · elapsed 0h53m · about 4h13m left
+[09:13:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 24 · elapsed 0h54m · about 4h12m left
+[09:14:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 25 · elapsed 0h55m · about 4h09m left
+[09:15:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 25 · elapsed 0h56m · about 4h08m left
+[09:16:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 26 · elapsed 0h57m · about 4h07m left
+[09:17:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 26 · elapsed 0h58m · about 4h06m left
+[09:18:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 27 · elapsed 0h59m · about 4h02m left
+[09:19:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 27 · elapsed 1h00m · about 4h01m left
+[09:20:41]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 28 · elapsed 1h01m · about 3h59m left
+[09:21:42]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 28 · elapsed 1h02m · about 3h58m left
+[17:53:19] GPU: NVIDIA GeForce RTX 4060 Laptop GPU · PyTorch 2.14.1+cu130
+[17:53:19] Final validation plan started (python tools/final_plan.py --plan shows every step)
+[17:53:19] ✓ Step 1 · Paper exact, seed 43 (fresh folds) — already done (20261109-175325_PAPER_input_1-plain)
+[17:53:19] ✓ Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds) — already done (20261109-184612_PAPER_input_1-recipe)
+[17:53:19] ✓ step1 — already done
+[17:53:19] ✓ step2 — already done
+[17:53:19] ✓ step3 — already done
+[17:53:19] ✓ Step 4 · Paper exact, LOCO + LODO (grouped 10-fold) — already done (20261109-203618_PAPER_input_4-plain)
+[17:53:19] ✓ Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold) — already done (20261109-221456_PAPER_input_4-recipe-LOCO)
+[17:53:19] ✓ Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold) — already done (20261109-235843_PAPER_input_4-recipe-LODO)
+[17:53:19] ✓ step4 — already done
+[17:53:19] ✓ finalise — already done
+[17:53:19] ✓ Final · IC50 model on ALL of processed_data (the decided recipe) — already done (20261110-013147_PAPER_processed_F1-ic50)
+[17:53:19] ✓ Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC) — already done (20261110-020257_GRAPH_csa-ALL_F2-aac-A)
+[17:53:19] ▶ Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M) — continuing 20261110-081934_GRAPH_csa-ALL_F3-aac-B
+[17:53:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): starting · models 0/1 · epoch 28 · elapsed 1h02m · about 3h58m left · Starting the training process…
+[17:54:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch – · elapsed 1h03m
+[17:55:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch – · elapsed 1h04m
+[17:56:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 1 · elapsed 1h05m · about 4h53m left
+[17:57:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 1 · elapsed 1h06m · about 4h52m left
+[17:58:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 2 · elapsed 1h07m · about 5h42m left
+[17:59:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 2 · elapsed 1h08m · about 5h41m left
+[18:00:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 2 · elapsed 1h09m · about 5h40m left
+[18:01:19]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 3 · elapsed 1h10m · about 5h44m left
+[18:02:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 3 · elapsed 1h11m · about 5h43m left
+[18:03:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 3 · elapsed 1h12m · about 5h42m left
+[18:04:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 4 · elapsed 1h13m · about 6h26m left
+[18:05:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 4 · elapsed 1h14m · about 6h25m left
+[18:06:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 5 · elapsed 1h15m · about 5h22m left
+[18:07:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 5 · elapsed 1h16m · about 5h21m left
+[18:08:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 6 · elapsed 1h17m · about 5h03m left
+[18:09:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 6 · elapsed 1h18m · about 5h02m left
+[18:10:20]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 7 · elapsed 1h19m · about 4h49m left
+[18:11:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 7 · elapsed 1h20m · about 4h48m left
+[18:12:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 7 · elapsed 1h21m · about 4h47m left
+[18:13:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 8 · elapsed 1h22m · about 4h45m left
+[18:14:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 8 · elapsed 1h23m · about 4h44m left
+[18:15:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 9 · elapsed 1h24m · about 4h48m left
+[18:16:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 9 · elapsed 1h25m · about 4h47m left
+[18:17:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 10 · elapsed 1h26m · about 4h40m left
+[18:18:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 10 · elapsed 1h27m · about 4h39m left
+[18:19:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 11 · elapsed 1h28m · about 4h39m left
+[18:20:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 11 · elapsed 1h29m · about 4h39m left
+[18:21:21]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 12 · elapsed 1h30m · about 4h54m left
+[18:22:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 12 · elapsed 1h31m · about 4h53m left
+[18:23:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 12 · elapsed 1h32m · about 4h52m left
+[18:24:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 13 · elapsed 1h33m · about 4h36m left
+[18:25:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 13 · elapsed 1h34m · about 4h35m left
+[18:26:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 14 · elapsed 1h35m · about 4h27m left
+[18:27:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 14 · elapsed 1h36m · about 4h26m left
+[18:28:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 15 · elapsed 1h37m · about 4h23m left
+[18:29:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 15 · elapsed 1h38m · about 4h22m left
+[18:30:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 16 · elapsed 1h39m · about 4h32m left
+[18:31:22]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 16 · elapsed 1h40m · about 4h30m left
+[18:32:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 17 · elapsed 1h41m · about 4h22m left
+[18:33:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 17 · elapsed 1h42m · about 4h21m left
+[18:34:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 18 · elapsed 1h43m · about 4h21m left
+[18:35:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 18 · elapsed 1h44m · about 4h20m left
+[18:36:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 19 · elapsed 1h45m · about 4h17m left
+[18:37:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 19 · elapsed 1h46m · about 4h16m left
+[18:38:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 19 · elapsed 1h47m · about 4h15m left
+[18:39:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 20 · elapsed 1h48m · about 4h22m left
+[18:40:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 20 · elapsed 1h49m · about 4h21m left
+[18:41:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 21 · elapsed 1h50m · about 4h21m left
+[18:42:23]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 21 · elapsed 1h51m · about 4h20m left
+[18:43:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 22 · elapsed 1h52m · about 4h10m left
+[18:44:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 22 · elapsed 1h53m · about 4h09m left
+[18:45:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 23 · elapsed 1h54m · about 4h18m left
+[18:46:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 23 · elapsed 1h55m · about 4h17m left
+[18:47:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 24 · elapsed 1h56m · about 4h10m left
+[18:48:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 24 · elapsed 1h57m · about 4h09m left
+[18:49:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 25 · elapsed 1h58m · about 4h06m left
+[18:50:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 25 · elapsed 1h59m · about 4h05m left
+[18:51:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 25 · elapsed 2h00m · about 4h04m left
+[18:52:24]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 26 · elapsed 2h01m · about 4h04m left
+[18:53:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 26 · elapsed 2h02m · about 4h03m left
+[18:54:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 27 · elapsed 2h03m · about 4h12m left
+[18:55:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 27 · elapsed 2h04m · about 4h11m left
+[18:56:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 28 · elapsed 2h05m · about 4h00m left
+[18:57:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 28 · elapsed 2h06m · about 3h59m left
+[18:58:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 29 · elapsed 2h07m · about 4h05m left
+[18:59:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 29 · elapsed 2h08m · about 4h04m left
+[19:00:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 29 · elapsed 2h09m · about 4h03m left
+[19:01:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 30 · elapsed 2h10m · about 4h30m left
+[19:02:25]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 30 · elapsed 2h11m · about 4h29m left
+[19:03:26]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 31 · elapsed 2h12m · about 4h23m left
+[19:04:26]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 31 · elapsed 2h13m · about 4h22m left
+[19:05:26]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 32 · elapsed 2h14m · about 4h20m left
+[19:06:26]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 32 · elapsed 2h15m · about 4h19m left
+[19:07:26]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 32 · elapsed 2h16m · about 4h18m left
+[19:08:26]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 33 · elapsed 2h17m · about 4h13m left
+[19:09:26]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 33 · elapsed 2h18m · about 4h12m left
+[19:10:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 34 · elapsed 2h19m · about 4h28m left
+[19:11:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 34 · elapsed 2h20m · about 4h27m left
+[19:12:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 34 · elapsed 2h21m · about 4h26m left
+[19:13:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 35 · elapsed 2h22m · about 3h47m left
+[19:14:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 35 · elapsed 2h23m · about 3h46m left
+[19:15:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 36 · elapsed 2h24m · about 3h56m left
+[19:16:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 36 · elapsed 2h25m · about 3h55m left
+[19:17:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 37 · elapsed 2h26m · about 3h54m left
+[19:18:27]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 37 · elapsed 2h27m · about 3h53m left
+[19:19:28]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 38 · elapsed 2h28m · about 3h48m left
+[19:20:28]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 38 · elapsed 2h29m · about 3h47m left
+[19:21:28]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): running · models 0/1 · epoch 38 · elapsed 2h30m · about 3h46m left
+[19:21:38]   Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M): finished · models 1/1 · epoch 39 · elapsed 2h30m · Finished
+[19:21:39] ✓ Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M) — finished (2h30m)
+[19:21:39] ▶ summary …
+[19:21:39]   D:\Education\PathDSP\final\FINAL_SUMMARY.md
+  D:\Education\PathDSP\final\final_results.zip  ← send this file
+[19:21:39] ✓ summary — done in 0h00m
+[19:21:39] ALL DONE. Results: final/FINAL_SUMMARY.md · send final/final_results.zip
+[19:59:10] GPU: NVIDIA GeForce RTX 4060 Laptop GPU · PyTorch 2.14.1+cu130
+[19:59:10] Final validation plan started (python tools/final_plan.py --plan shows every step)
+[19:59:10] ✓ Step 1 · Paper exact, seed 43 (fresh folds) — already done (20261109-175325_PAPER_input_1-plain)
+[19:59:10] ✓ Step 1 · Paper exact + C·D×3·E·F·G·Z, seed 43 (fresh folds) — already done (20261109-184612_PAPER_input_1-recipe)
+[19:59:10] ✓ step1 — already done
+[19:59:10] ✓ step2 — already done
+[19:59:10] ✓ step3 — already done
+[19:59:10] ✓ Step 4 · Paper exact, LOCO + LODO (grouped 10-fold) — already done (20261109-203618_PAPER_input_4-plain)
+[19:59:10] ✓ Step 4 · Paper exact + C·D×3·E·F·G·Z, LOCO (grouped 10-fold) — already done (20261109-221456_PAPER_input_4-recipe-LOCO)
+[19:59:10] ✓ Step 4 · Paper exact + C·D×3·E·F·G (raw target), LODO (grouped 10-fold) — already done (20261109-235843_PAPER_input_4-recipe-LODO)
+[19:59:10] ▶ step4 …
+[19:59:11]   LOCO: recipe vs plain ΔRMSE -0.0243, better on 10/10 folds
+[19:59:11]   LODO: recipe vs plain ΔRMSE +0.0110, better on 3/10 folds
+[19:59:11] ✓ step4 — done in 0h00m
+[19:59:11] ✓ finalise — already done
+[19:59:11] ✓ Final · IC50 model on ALL of processed_data (the decided recipe) — already done (20261110-013147_PAPER_processed_F1-ic50)
+[19:59:11] ✓ Final · AAC model on ALL 5 CSA studies, Run A recipe (raw AAC) — already done (20261110-020257_GRAPH_csa-ALL_F2-aac-A)
+[19:59:11] ✓ Final · AAC model on ALL 5 CSA studies, Run B recipe (S + R + M) — already done (20261110-081934_GRAPH_csa-ALL_F3-aac-B)
+[19:59:11] ▶ summary …
+[19:59:11]   D:\Education\PathDSP\final\FINAL_SUMMARY.md
+  D:\Education\PathDSP\final\final_results.zip  ← send this file
+[19:59:11] ✓ summary — done in 0h00m
+[19:59:11] ALL DONE. Results: final/FINAL_SUMMARY.md · send final/final_results.zip

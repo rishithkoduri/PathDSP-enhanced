@@ -1,83 +1,57 @@
-import gradio as gr
-import torch as tch
-import numpy as np
-import myModel as mynet
+"""
+PathDSP-X — Explainable drug sensitivity prediction through cancer pathway enrichment.
+Start with:   streamlit run app.py
+"""
 import os
+import sys
 
-# 1. Define the exact features used during training
-CANCER_TYPES = [
-    'ACC', 'ALL', 'BLCA', 'BRCA', 'CESC', 'CLL', 'COAD/READ', 'DLBC', 'ESCA', 'GBM', 
-    'HNSC', 'KIRC', 'LAML', 'LCML', 'LGG', 'LIHC', 'LUAD', 'LUSC', 'MB', 'MESO', 'MM', 
-    'NB', 'OV', 'PAAD', 'PRAD', 'SCLC', 'SKCM', 'STAD', 'THCA', 'UCEC', 'UNABLE TO CLASSIFY'
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+import streamlit as st  # noqa: E402
+
+st.set_page_config(page_title="PathDSP-X", page_icon="●", layout="wide", initial_sidebar_state="collapsed")
+
+from core import config as C  # noqa: E402
+from core import store as S  # noqa: E402
+from ui import common as U  # noqa: E402
+from ui import page_live, page_predict, page_results, page_train  # noqa: E402
+from ui import theme as T  # noqa: E402
+
+T.init_mode()          # Light / Dark: from the header switch, or ?theme=light in the URL
+T.inject()
+
+
+@st.fragment(run_every=2)
+def brand():
+    act = S.active_run()
+    chips = []
+    if act:
+        stt = act["status"]
+        n, d = stt.get("n_jobs") or 0, stt.get("done_jobs") or 0
+        pct = f" · {100 * d / n:.0f}%" if n else ""
+        chips.append(f'<span class="nt-chip red"><span class="nt-dot live"></span>TRAINING · '
+                     f'{T.esc(U.model_tag(act["config"]))}{pct}</span>')
+    chips.append(U.gpu_chip())
+    gstate, gtext = U.gpu_state(act)
+    dot = {"in use": "live", "idle": "white"}.get(gstate, "")
+    st.markdown(f'<div class="nt-brand"><div><div class="nt-logo">PATHDSP<b>-X</b></div>'
+                f'<div class="nt-sub">{T.esc(C.APP_TITLE)} · Team G1589</div></div>'
+                f'<div class="nt-right"><div class="nt-chips">{"".join(chips)}</div>'
+                f'<div class="nt-gpu-state {gstate.replace(" ", "-")}"><span class="nt-dot {dot}"></span>'
+                f'{T.esc(gtext)}</div></div></div>', unsafe_allow_html=True)
+
+
+head, switch = st.columns([10, 1.3], vertical_alignment="top")
+with head:
+    brand()
+with switch:
+    T.mode_switch()
+
+pages = [
+    st.Page(page_train.render, title="Train", icon=":material/tune:", url_path="train", default=True),
+    st.Page(page_live.render, title="Live", icon=":material/monitoring:", url_path="live"),
+    st.Page(page_results.render, title="Results", icon=":material/insights:", url_path="results"),
+    st.Page(page_predict.render, title="Predict", icon=":material/biotech:", url_path="predict"),
 ]
-
-PATHWAYS = [
-    'ABL signaling', 'Apoptosis regulation', 'Cell cycle', 'Chromatin histone acetylation', 
-    'Chromatin histone methylation', 'Chromatin other', 'Cytoskeleton', 'DNA replication', 
-    'EGFR signaling', 'ERK MAPK signaling', 'Genome integrity', 'Hormone-related', 
-    'IGF1R signaling', 'JNK and p38 signaling', 'Metabolism', 'Mitosis', 'Other', 
-    'Other, kinases', 'PI3K/MTOR signaling', 'Protein stability and degradation', 
-    'RTK signaling', 'Unclassified', 'WNT signaling', 'p53 pathway'
-]
-
-N_FEATURES = len(CANCER_TYPES) + len(PATHWAYS)
-
-# 2. Load the trained PyTorch model
-MODEL_PATH = "dataset/model_output.FNN.cv_5best_model.pt"
-
-print("Loading model from:", MODEL_PATH)
-net = mynet.FNN(N_FEATURES)
-
-if os.path.exists(MODEL_PATH):
-    net.load_state_dict(tch.load(MODEL_PATH, map_location=tch.device('cpu')))
-    net.eval()
-else:
-    print(f"Warning: Model file not found at {MODEL_PATH}. Using untrained weights.")
-
-# 3. Prediction function
-def predict_sensitivity(cancer_type, pathway):
-    # Initialize zero vector
-    features = np.zeros(N_FEATURES, dtype=np.float32)
-    
-    # Set the corresponding CancerType to 1
-    if cancer_type in CANCER_TYPES:
-        idx_cancer = CANCER_TYPES.index(cancer_type)
-        features[idx_cancer] = 1.0
-        
-    # Set the corresponding Pathway to 1
-    if pathway in PATHWAYS:
-        idx_pathway = len(CANCER_TYPES) + PATHWAYS.index(pathway)
-        features[idx_pathway] = 1.0
-        
-    # Convert to PyTorch tensor
-    tensor_input = tch.from_numpy(features).unsqueeze(0)  # Add batch dimension
-    
-    # Make prediction
-    with tch.no_grad():
-        prediction = net(tensor_input).item()
-        
-    return round(prediction, 4)
-
-# 4. Build the Gradio UI
-with gr.Blocks(theme=gr.themes.Soft()) as interface:
-    gr.Markdown("# PathDSP: Drug Sensitivity Predictor")
-    gr.Markdown("Select a cancer cell-line type and a target drug pathway to predict the log(IC50) sensitivity score. Lower IC50 means the cancer is more sensitive to the drug.")
-    
-    with gr.Row():
-        cancer_dropdown = gr.Dropdown(choices=CANCER_TYPES, label="Cancer Type")
-        pathway_dropdown = gr.Dropdown(choices=PATHWAYS, label="Target Pathway")
-        
-    predict_btn = gr.Button("Predict Sensitivity", variant="primary")
-    
-    output_score = gr.Number(label="Predicted LN_IC50 Score")
-    
-    # Map button click to function
-    predict_btn.click(
-        fn=predict_sensitivity, 
-        inputs=[cancer_dropdown, pathway_dropdown], 
-        outputs=output_score
-    )
-
-if __name__ == "__main__":
-    print("Starting interface...")
-    interface.launch(share=False)
+st.session_state["_pages"] = {p.url_path: p for p in pages}
+st.navigation(pages, position="top").run()

@@ -1,0 +1,5 @@
+leak,model,RMSE clean,RMSE leaky,Δ (leaky − clean),relative,folds leaky looks better,folds,Wilcoxon p,note
+L1 · z-scoring fitted on all rows (incl. test),Ridge (α = 10),0.5079533948183723,0.507953399457298,4.638925593658527e-09,9.132581140278147e-09,3,10,0.625,our runs fit it per fold
+L2 · top-200 features chosen on all rows,Ridge (α = 10),0.6476120808866177,0.6478567242191746,0.00024464333255673764,0.00037776215079528324,4,10,1.0,our runs select no features
+L3 · drug means / sds of the z target from all rows,Ridge (α = 10),0.5000409409667029,0.4990704332340525,-0.0009705077326506107,-0.0019408565442149176,10,10,0.001953125,our runs use training rows only
+L4 · early stopping / best round chosen on the test fold,"LightGBM (app defaults, drug-wise z)",0.43715935850682974,0.43697278866031786,-0.00018656984651196362,-0.0004267776564345215,7,10,0.4921875,"best round 1572 (clean) vs 1599 (test-stopped), median"
