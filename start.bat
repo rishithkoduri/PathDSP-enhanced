@@ -1,6 +1,7 @@
 @echo off
 REM PathDSP-X launcher: checks the setup, installs anything missing, verifies, then opens the app.
-REM Double-click it. Safe to run every time: when everything is installed it only checks and starts.
+REM Double-click it. Safe to run every time: when nothing changed since the last full check it starts in seconds.
+REM   start.bat full     run the full check again (GPU, PyTorch, every package import)
 setlocal EnableExtensions
 cd /d "%~dp0"
 title PathDSP-X
@@ -36,7 +37,7 @@ echo   [....] creating virtual environment .venv ...
 echo   [ OK ] virtual environment     .venv created
 
 :packages
-"%PY%" tools\setup_env.py
+"%PY%" tools\setup_env.py %*
 if errorlevel 1 goto :fail
 
 echo.

@@ -17,8 +17,10 @@ Double-click **`start.bat`** — that is all, every time. It
 3. checks the project files: app files, reference tables, trained models in `models/`, datasets in `data/`;
 4. verifies that every package imports, then opens the app in your browser.
 
-When everything is already installed it only checks (a few seconds) and starts. Keep its window open while you use the
-app; close it to stop. No venv activation or `Set-ExecutionPolicy` is needed. If Python itself is missing, it installs
+The full check (GPU, PyTorch test, importing every package) runs only the first time and after a package changes; it
+then remembers the result in `.venv/pathdspx_check.json`. Every later start only compares package versions with that
+file (under a second) and opens the app. To force the full check again, run `start.bat full` in the project folder.
+Keep its window open while you use the app; close it to stop. No venv activation or `Set-ExecutionPolicy` is needed. If Python itself is missing, it installs
 Python 3.12 with `winget` and asks you to run it again.
 
 - **First data load:** reading `input.txt` once takes about 10–60 s and writes a cache to `data/cache/`. Every later load takes under 1 s.
